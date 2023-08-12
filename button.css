@@ -1,0 +1,9 @@
+.bg-secondary-subtle .container .card .card-body .container .col .card .card-body .bg-primary-subtle .btn:hover{
+    color: #ffffff;
+}
+.bg-secondary-subtle .container .card .card-body .container .col .card .card-body .bg-secondary-subtle .btn:hover{
+    color: #ffffff;
+}
+.bg-secondary-subtle .container .card .card-body .container .col .card .card-header .bruh{
+    word-break: break-all;
+}
