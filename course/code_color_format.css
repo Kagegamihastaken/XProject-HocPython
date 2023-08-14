@@ -16,3 +16,9 @@
 .bg-secondary-subtle .container .card .card-body .container .card .card-body .code .o{
     color: #f0ab44;
 }
+.bg-secondary-subtle .container .card .card-body .container .code-dark-mode {
+    width: device-width;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}

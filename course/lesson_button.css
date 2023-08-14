@@ -1,27 +1,18 @@
-.bg-secondary-subtle .container .card .card-body .btn-primary:hover{
+.bg-secondary-subtle .container .card .card-body .lesson-button .next-bg:hover{
     background-color: #b4c6e0;
     outline-color: #b4c6e0;
-    outline-style: auto;
 }
-.bg-secondary-subtle .container .card .card-body .btn-primary{
+.bg-secondary-subtle .container .card .card-body .lesson-button .next-bg{
     background-color: #CEE1FE;
     outline-color: #CEE1FE;
-    outline-style: auto;
 }
-.bg-secondary-subtle .container .card .card-body .btn-danger:hover{
+.bg-secondary-subtle .container .card .card-body .lesson-button .index:hover{
     color: #655d74;
     background-color: #c0b0da;
     outline-color: #c0b0da;
-    outline-style: auto;
 }
-.bg-secondary-subtle .container .card .card-body .btn-danger{
+.bg-secondary-subtle .container .card .card-body .lesson-button .index{
     color: #655d74;
     background-color: #e0cefe;
     outline-color: #e0cefe;
-    outline-style: auto;
-}
-.bg-secondary-subtle .container .card .card-body .btn-primary .btn-warning{
-    color: #FFFFFF;
-    background-color: #0D6EFD;
-    outline-color: #0D6EFD;
 }
