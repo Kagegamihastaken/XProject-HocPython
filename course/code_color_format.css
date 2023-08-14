@@ -1,0 +1,24 @@
+.bg-secondary-subtle .container .card .card-body .container .code-dark-mode{
+    background-color: #424242;
+}
+.bg-secondary-subtle .container .card .card-body .container .card .card-body .code .b{
+    color: #c676e6;
+}
+.bg-secondary-subtle .container .card .card-body .container .card .card-body .code .g{
+    color: #74c474;
+}
+.bg-secondary-subtle .container .card .card-body .container .card .card-body .code .de{
+    color: #cacaca;
+}
+.bg-secondary-subtle .container .card .card-body .container .card .card-body .code .y{
+    color: #ffeac4;
+}
+.bg-secondary-subtle .container .card .card-body .container .card .card-body .code .o{
+    color: #f0ab44;
+}
+.bg-secondary-subtle .container .card .card-body .container .code-dark-mode {
+    width: device-width;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}

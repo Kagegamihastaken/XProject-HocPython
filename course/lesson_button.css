@@ -1,0 +1,24 @@
+.bg-secondary-subtle .container .card .card-body .lesson-button .next-bg:active{
+    background-color: #9cb3d3 !important;
+}
+.bg-secondary-subtle .container .card .card-body .lesson-button .next-bg:hover{
+    background-color: #b4c6e0;
+    outline-color: #b4c6e0;
+}
+.bg-secondary-subtle .container .card .card-body .lesson-button .next-bg{
+    background-color: #CEE1FE;
+    outline-color: #CEE1FE;
+}
+.bg-secondary-subtle .container .card .card-body .lesson-button .index:active{
+    background-color: #a390c0 !important;
+}
+.bg-secondary-subtle .container .card .card-body .lesson-button .index:hover{
+    color: #655d74;
+    background-color: #c0b0da;
+    outline-color: #c0b0da;
+}
+.bg-secondary-subtle .container .card .card-body .lesson-button .index{
+    color: #655d74;
+    background-color: #e0cefe;
+    outline-color: #e0cefe;
+}

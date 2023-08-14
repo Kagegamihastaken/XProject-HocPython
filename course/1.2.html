@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kagegami's Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lesson_button.css" />
+    <link rel="stylesheet" href="..\navbar.css" />
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HocPython</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="..\index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Navigate
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="1.3.html">1.3 - Giới thiệu về môi trường Python Shell</a></li>
+                            <li><a class="dropdown-item" href="..\index.html">Mục lục</a></li>
+                            <li><a class="dropdown-item" href="1.1.html">1.1 - Giới thiệu Python và cách cài đặt
+                                    Python</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <div class="bg-secondary-subtle">
+        <br>
+        <div class="container" style="max-width: 835px;">
+            <div class="card mt-xl-3 mb-xl-3 shadow rounded-4">
+                <div class="card-body">
+                    <div class="container">
+                        <p class="fs-3">1.2 - Cài đặt IDE để lập trình Python</p>
+                    </div>
+                    <br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbsp<span class="fw-bold">IDE</span> là một phần mềm có công cụ giúp đỡ lập
+                        trình viên trong việc hát triển phần mềm.
+                        Một IDE thường sẽ có một trình soạn thảo mã nguồn, một trình biên dịch hoặc mộ trương trình
+                        thông dịch, một công cụ xây dựng tự động, một trình gỡ lỗi và quan trọng hơn nữa là có đánh dấu
+                        cú pháp (syntax highlighting).
+                        &nbsp&nbsp&nbsp&nbspCó thể bạn nghe bạn có ý định cài, nhưng mà IDE nào? Rất nhiều IDE là miễn
+                        phí và bạn có thể cài nhiều IDE trong máy của bạn nếu bạn muốn, vì thế không cần cảm nghĩ là lựa
+                        chọn sai IDE.<br>
+                        &nbsp&nbsp&nbsp&nbspDưới đây là một số IDE chúng tôi khuyên bạn cài.
+                    </div>
+                    <hr class="hr">
+                    </hr><br>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Visual Studio Code</p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspNếu bạn muốn một IDE mà nhẹ hơn Visual Studio và miễn phí thì đây sẽ là lựa
+                        chọn của
+                        bạn. Visual Studio Code được lập trình bởi Microsoft và hỗ trợ nhiều ngôn ngữ lập trình khác và
+                        ba hệ điều hành như: Windows,
+                        Linux và Mac OS.<br>
+                        &nbsp&nbsp&nbsp&nbspCác bước để tiến hành cài đặt Visual Studio Code:<br>
+                        &nbsp - Bước 1: bạn lên trang <a href="https://code.visualstudio.com/"
+                            class="pe-auto">code.visualstudio.com</a>
+                        <div class="container" style="max-width: 750px;">
+                            <div class="card">
+                                <img src="python2.png" class="card-img" alt="...">
+                            </div>
+                        </div>
+                        &nbsp&nbsp&nbsp&nbspỞ đây tôi đang dùng hệ điều hành Windows cho nên cái nút được khoanh
+                        tròn màu đỏ nó sẽ thành là "Download for Windows", nếu bạn sử dụng hệ điều hành khác
+                        thì nó sẽ hiển thị theo hệ điều hành bạn đang dùng.<br>
+                        &nbsp - Bước 2: Bạn nhấn nút được khoanh tròn và tải về trong máy và cài đặt.<br>
+                        &nbsp - Bước 3: Sau khi bạn đã cài xong thì vào Visual Studio Code, bạn chọn phần mở rộng.<br>
+                        (Extensions) hoặc bạn nhấn phím tổ hợp Ctrl+Shift+X.<br>
+                        &nbsp - Bước 4: Tiếp theo bạn tìm kiếm "Python" rồi bạn thấy như hình dưới đây.<br>
+                        <div class="container" style="max-width: 300px;">
+                            <div class="card">
+                                <img src="python1_whynot.png" class="card-img" alt="...">
+                            </div>
+                        </div>
+                        &nbsp&nbsp&nbsp&nbspNếu bạn làm được như hình trên thì chúng ta vào bước cuối cùng.<br>
+                        &nbsp - Bước 5: Nhấn nút Install.<br>
+                        &nbsp&nbsp&nbsp&nbspNếu bạn làm xong những bước trên thì bạn đã thành công cài đặt Visual Studio
+                        Code cho bạn rồi!<br>
+                    </div>
+                    <hr class="hr">
+                    </hr><br>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">PyCharm</p>
+                    </div>
+                    <div class="container">
+                        PyCharm là một phần mềm IDE được lập trình bởi JetBrain, được nhiều lập trình viên có nhiều kinh
+                        nghiệm sử dụng. PyCharm cũng cho chúng ta nhiều công cụ để lập trình Python một cách dễ hơn. Một
+                        số chức năng của PyCharm làm giảm thời gian bạn lập trình một phần mềm xuống mức tối đa. Tuy bên
+                        cạnh có nhiều chức năng giúp ích nhưng PyCharm phải trả tiền thì bạn mới sử dụng tiếp được. Mặc
+                        dù phải trả tiền nhưng bạn có thể dùng thử 30 ngày mà PyCharm cũng cấp để trải nghiệm.<br>
+                        Các bước để tiến hành để cài đặt: <br>
+                        &nbsp - Bước 1: vào trang web
+                        <a href="https://www.jetbrains.com/pycharm/" class="pe-auto">www.jetbrains.com/pycharm/</a>
+                        <div class="container" style="max-width: 750px;">
+                            <div class="card">
+                                <img src="python-whatdoyouexpect.png" class="card-img" alt="...">
+                            </div>
+                        </div>
+                        &nbsp - Bước 2: bạn nhấn vào "Download" được khoanh tròn
+                        <div class="container" style="max-width: 750px;">
+                            <div class="card">
+                                <img src="python3.png" class="card-img" alt="...">
+                            </div>
+                        </div>
+                        Hiện tại tôi đang dùng hệ điều hành Windows cho nên tôi sẽ nhấn tab mang tên "Windows", Nếu bạn
+                        dùng hệ điều hành khác với tôi thì bạn sẽ chọn tab khác.<br>
+                        &nbsp - Bước 3: Lại nhấn nút "Download" thêm một lần nữa và cài đặt trong máy của bạn. <br>
+                        Nếu bạn thực hiện như bước trên thì bạn đã hoàn thành cài đặt Pycharm rồi!
+                    </div>
+                    <hr class="hr">
+                    </hr><br>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">IDE Khác</p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspMột số IDE khác đáng kể như:<br>
+                        &nbsp - Thonny: là một IDE được sử dụng nhiều trong trường học, sử dụng để lập trình Python.<br>
+                        &nbsp - Sublime Text: là một IDE rất nhẹ được sử dụng để lập trình Python.<br>
+                        &nbsp - Lập trình trên web: cái này được sử dụng để mới học Python.<br>
+                    </div>
+                    &nbsp&nbsp&nbsp&nbspNếu bạn đã Cài xong một IDE cho riêng mình thì mời bạn đọc phần tiếp theo.<br>
+                    <br><br><br>
+                    <div class="d-grid gap-2 lesson-button">
+                        <a href="1.3.html" role="button" class="btn next-bg text-start"
+                        style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                        <div class="fs-5 text-success fw-bold" style="padding-bottom:0px; ">&gt Bài học tiếp theo</div>
+                        <span class="btn btn-success"
+                            style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events: none"
+                            disabled>1.3</span>
+                        <span class="fs-6 text-success"> Giới thiệu về môi trường Python Shell</span>
+                    </a>
+                    <a href="..\index.html" role="button" class="btn index text-start"
+                        style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                        <div class="fs-5 fw-bold" style="padding-bottom:0px; ">Quay trở về mục lục</div>
+                    </a>
+                    <a href="1.1.html" role="button" class="btn next-bg text-start"
+                        style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                        <div class="fs-5 text-primary fw-bold" style="padding-bottom:0px; ">&lt Bài học trước
+                        </div>
+                        <span class="btn btn-primary"
+                            style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events:none"
+                            disabled>1.1</span>
+                        <span class="fs-6 text-primary"> Giới thiệu Python và cách cài đặt Python</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+</body>
+
+</html>
