@@ -66,15 +66,108 @@
                         <p class="fs-5 fw-bold">Biến số</p>
                     </div>
                     <div class="container">
-                        &nbsp&nbsp&nbsp&nbspNhư chúng ta đã biết, ở trên thế giới của chúng ta có hai định nghĩa, <span class="fw-bold"> Biến số </span> và <span class="fw-bold"> Hằng số </span>. <br>
-                        &nbsp&nbsp&nbsp&nbsp<span class="fw-bold">Hằng số</span> là một đại lượng khoa học bất biến, không bao giờ thay đổi giá trị trong mọi trường hợp, mọi điều kiện.<br>
-                        &nbsp&nbsp&nbsp&nbspNgược lại, <span class="fw-bold">biến số</span> là một đại lượng khoa học (thường được áp dụng nhiều trong toán học và công nghệ thông tin) có thể thay đổi giá trị trong một số trường hợp.<br>
-                        &nbsp&nbsp&nbsp&nbspỞ trong ngôn ngữ lập trình Python, chúng ta chỉ quan tâm đến biến số.<br>
+                        &nbsp&nbsp&nbsp&nbspNhư chúng ta đã biết, ở trên thế giới của chúng ta có hai định nghĩa, <span
+                            class="fw-bold"> Biến số </span> và <span class="fw-bold"> Hằng số </span>. <br>
+                        &nbsp&nbsp&nbsp&nbsp<span class="fw-bold">Hằng số</span> là một đại lượng khoa học bất biến,
+                        không bao giờ thay đổi giá trị trong mọi trường hợp, mọi điều kiện.<br>
+                        &nbsp&nbsp&nbsp&nbspNgược lại, <span class="fw-bold">biến số</span> là một đại lượng khoa học
+                        (thường được áp dụng nhiều trong toán học và công nghệ thông tin) có thể thay đổi giá trị trong
+                        một số trường hợp.<br>
+                        &nbsp&nbsp&nbsp&nbspỞ trong ngôn ngữ lập trình Python, chúng ta chỉ quan tâm đến biến
+                        số.<br><br>
                     </div>
                     <hr class="hr">
                     </hr>
                     <div class="container">
                         <p class="fs-5 fw-bold">Cú pháp đặt biến và một số lưu ý khi đặt tên</p>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến&gt = &ltgiá trị cần gán&gt</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTrong đó:<br>
+                        &nbsp&nbsp&nbsp&nbsp - <code>&lttên biến&gt</code> là tên bạn định đặt cho biến.<br>
+                        &nbsp&nbsp&nbsp&nbspNhững lưu ý khi đặt tên biến:<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp * Tên biến chỉ bắt đầu với một chữ cái hoặc dấu gạch
+                        dưới<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp * Tên biến không được bắt đầu là chữ số<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp * Tên biến chỉ có thể gồm các chữ số, chữ số và dấu gạch
+                        dưới (A-z, 0-9 và _)<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp * Tên biến có phân biệt các chữ hoa (Ví dụ: name, Name, NAME
+                        là ba biến hoàn toàn khác nhau)<br>
+                        &nbsp&nbsp&nbsp&nbsp - <code>&ltgiá trị cần gán&gt</code> là dữ liệu bạn cần gán cho
+                        biến
+                    </div>
+                    &nbsp&nbsp&nbsp&nbspVí dụ:
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&gt&gt&gt so_nguyen_to_chan = </span><span class="o">2</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ câu lệnh trên ta khai báo biến <code>so_nguyen_to_chan</code> và gán
+                        <code>so_nguyen_to_chan</code> với <code>2</code>
+                    </div><br>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Kiểu dữ liệu trong biến số</p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCho đến bây giờ chúng ta mới nói đến một loại dữ liệu xâu, ở
+                        trong phần này ta sẽ nói hết các kiểu loại dữ liệu.<br>
+                        &nbsp&nbsp&nbsp&nbsp - Integer (viết tắt là int) là kiểu dữ liệu số nguyên. Hàm chuyển
+                        đổi sang <code>int</code> là <code>int()</code><br>
+                        &nbsp&nbsp&nbsp&nbsp - Floating Point (viết tắt là float) là kiểu dữ liệu só nguyên.
+                        Hàm chuyển đổi sang <code>float</code> là <code>float()</code><br>
+                        &nbsp&nbsp&nbsp&nbsp - String (viết tắt là str) là kiểu dữ liệu xâu. Hàm chuyển đổi
+                        sang <code>str</code> là <code>str()</code><br>
+                        &nbsp&nbsp&nbsp&nbsp - Boolean (viết tắt là bool) là kiểu dữ liệu logic. Hàm chuyển
+                        đổi sang <code>complex</code> là <code>bool()</code><br>
+                        &nbsp&nbsp&nbsp&nbsp - Complex (chỉ dùng được khi import cmath) là kiểu dữ liệu số thực
+                        có số tưởng tượng (x + yi). Hàm để chuyển đổi sang <code>complex</code> là
+                        <code>complex()</code><br>
+                        &nbsp&nbsp&nbsp&nbspMột số hàm khác:<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp - Hàm type(<code>&ltbiến&gt</code>): hàm sẽ trả về kiểu dữ
+                        liệu tùy theo <code>&ltbiến&gt</code>. Ví dụ: <br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    
+                                    <span class="de">&gt&gt&gt type(</span><span class="o">a</span><span class="de">)</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <!-- Begin of board -->
+                    <div class="container text-center">
+                        <div class="row row-cols-auto">
+                            <div class="col card card-body rounded-0">1</div>
+                            <div class="col card card-body rounded-0">1</div>
+                            <div class="col card card-body rounded-0">1</div>
+                        </div>
                     </div>
                     <br><br><br>
                     <div class="d-grid gap-2 lesson-button">
