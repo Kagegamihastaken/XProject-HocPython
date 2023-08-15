@@ -58,7 +58,7 @@
             <div class="card mt-xl-3 mb-xl-3 shadow rounded-4">
                 <div class="card-body">
                     <div class="container">
-                        <p class="fs-3">2.3 - Nhập dữ liệu></p>
+                        <p class="fs-3">2.3 - Nhập dữ liệu</p>
                     </div>
                     <br>
                     <div class="container">
@@ -69,6 +69,175 @@
                         &nbsp&nbsp&nbsp&nbspHàm <code>input</code> được dùng để nhập dữ liệu trong console khi
                         đang chạy. Ví dụ, ta muốn tạo một biến dùng để nhập dữ liệu thì ta làm như
                         sau:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">bien_nhap = </span><span class="b">input</span><span class="de">(</span><span class="g">"Mời bạn nhập: "</span><span
+                                        class="de">)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ trên chúng ta khai báo biến <code>bien_nhap</code> rồi gán hàm
+                        <code>input</code> vào trong biến <code>bien_nhap</code>, lúc này hàm <code>input</code> in
+                        ra <code>"Mời bạn nhập"</code> rồi chờ chúng ta cho dến khi chúng ta nhập dữ liệu.
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">Mời bạn nhập: </span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspSau khi bạn nhập xong, dữ liệu bạn vừa nhập được chuyển thành xâu
+                        (đây là mặc định của <code>input</code>). Nếu bạn muốn chuyển sang một kiểu dữ liệu
+                        khác thì bạn chỉ cần lấy tên viết tắt của chúng rồi mở ngoặc đóng ngoặc như câu
+                        lệnh dưới:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">bien_nhap = </span><span class="b">int</span><span class="de">(</span><span class="b">input</span><span class="de">(</span><span class="g">"Mời bạn nhập: "</span><span
+                                        class="de">))</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspLúc này khi bạn nhập số thì thay vì là xầu thì hàm
+                        <code>int()</code> chuyển thành kiểu dữ liệu <code>int</code>, nhưng một lưu ý, chỉ
+                        hoạt dộng khi nhập dữ liệu kiểu số, nếu ta nhập một kiểu dữ liệu xâu là
+                        <code>"test"</code>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">Traceback (most recent call last):</span><br>
+                                    <span class="de">&nbsp&nbspFile "&ltstdin&gt", line 1, in &ltmodule&gt</span><br>
+                                    <span class="de">ValueError: invalid literal for int() with base 10: 'test'</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspBạn không cần phải dùng hàm <code>int()</code>, mà bạn có thể thay
+                        hàm khác như: <code>float()</code>, <code>str()</code>, <code>float()</code>,...<br>
+                        &nbsp&nbsp&nbsp&nbspĐối với số nguyên ta sẽ dùng như sau:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">bien_nhap = </span><span class="b">int</span><span class="de">(</span><span class="b">input</span><span class="de">(</span><span class="g">"Mời bạn nhập: "</span><span
+                                        class="de">))</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspĐối với số thực ta sẽ dùng như sau:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">bien_nhap = </span><span class="b">float</span><span class="de">(</span><span class="b">input</span><span class="de">(</span><span class="g">"Mời bạn nhập: "</span><span
+                                        class="de">))</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspVì bình thường hàm <code>input</code> luôn đưa ra kiểu dữ liệu xâu,
+                        nếu bạn muốn nhập kiểu dữ liệu sau, ta sẽ dùng như sau:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">bien_nhap = </span><span class="b">input</span><span class="de">(</span><span class="g">"Mời bạn nhập: "</span><span
+                                        class="de">)</span><br>
+                                    <span class="com">#hoặc</span><br>
+                                    <span class="de">bien_nhap = </span><span class="b">str</span><span class="de">(</span><span class="b">input</span><span class="de">(</span><span class="g">"Mời bạn nhập: "</span><span
+                                        class="de">))</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbsp<span class="fw-bold">Lưu ý: </span>bạn không nên để xâu trống trong
+                        hàm <code>input</code>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">bien_nhap = </span><span class="b">input</span><span class="de">(</span><span class="g">""</span><span
+                                        class="de">)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspMặc dù hàm <code>input</code> vẫn cho bạn nhập nhưng dễ bị nhầm
+                        lẫn với chương trình bị đứng đơ
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Cú pháp của hàm <span class="font-monospace">input</span></p>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến&gt = input(&ltkiểu dữ liệu xâu&gt)</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTrong đó:<br>
+                        &nbsp&nbsp&nbsp&nbsp - <code>&lttên biến&gt</code> là tên của biến<br>
+                        &nbsp&nbsp&nbsp&nbsp - <code>&ltkiểu dữ liệu xâu&gt</code> là xâu bạn in ra rồi chờ
+                        người dùng nhập. Nếu bạn nhập kiểu dữ liệu khác xâu thì hàm <code>input</code> sẽ
+                        chuyển thành kiểu dữ liệu xâu<br><br><br>
+                        Nếu bạn đọc hết chương 2 thì chúc mừng bạn, bạn đã học được xuất dữ liệu, biến và nhập dữ liệu
                     </div>
                     <br><br><br>
                     <div class="d-grid gap-2 lesson-button">

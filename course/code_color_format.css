@@ -1,6 +1,9 @@
 .bg-secondary-subtle .container .card .card-body .container .code-dark-mode{
     background-color: #424242;
 }
+.bg-secondary-subtle .container .card .card-body .container .card .card-body .code .com{
+    color: #636262;
+}
 .bg-secondary-subtle .container .card .card-body .container .card .card-body .code .b{
     color: #c676e6;
 }
