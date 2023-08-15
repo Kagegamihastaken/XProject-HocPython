@@ -34,12 +34,10 @@
                             Navigate
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="2.3.html">2.3 - Hàm <span
-                                        class="font-monospace">input</span> </a>
+                            <li><a class="dropdown-item" href="2.3.html">2.3 - Nhập dữ liệu </a>
                             </li>
                             <li><a class="dropdown-item" href="..\index.html">Mục lục</a></li>
-                            <li><a class="dropdown-item" href="2.1.html">2.1 - Hàm <span
-                                        class="font-monospace">print</span></a>
+                            <li><a class="dropdown-item" href="2.1.html">2.1 - Xuất dữ liệu</a>
                             </li>
                         </ul>
                     </li>
@@ -89,7 +87,7 @@
                             <div class="card-body"
                                 style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
                                 <code class="code">
-                                    <span class="de">&ltten bien&gt = &ltgia tri can gan&gt</span>
+                                    <span class="de">&lttên biến&gt = &ltgiá trị cần gán&gt</span>
                                 </code>
                             </div>
                         </div>
@@ -130,6 +128,34 @@
                         &nbsp&nbsp&nbsp&nbspỞ câu lệnh trên ta khai báo biến <code>so_nguyen_to_chan</code> và gán
                         <code>so_nguyen_to_chan</code> với <code>2</code>
                     </div><br>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Khai báo nhiều biến cùng một dòng</p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ trong Python có hỗ trợ cho chúng ta khai báo nhiều biến trong một
+                        dòng, được phân cách bởi dấu phẩy, ví dụ:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">a, b = </span><span class="o">2</span><span class="de">, </span><span class="o">3</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ câu lệnh trên chúng ta khai báo biến <code>a</code> rồi gán
+                        <code>2</code> vào biến <code>a</code>. <br>
+                        &nbsp&nbsp&nbsp&nbspTiếp theo chúng ta khai báo biến <code>b</code>
+                        rồi gán <code>3</code> vào biến <code>b</code>.
+
+                    </div>
+                    <!-- End of template -->
                     <hr class="hr">
                     </hr>
                     <div class="container">
@@ -272,6 +298,82 @@
                         </div>
                     </div>
                     <br><br>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Một số phép tính rút gọn</p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTương tự như các phép tính cơ bản nhưng sẽ được rút gọn<br>
+                    </div>
+                    <!-- Begin of board -->
+                    <div class="container text-center">
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0 fs-4 fw-bold">Dấu gốc</div>
+                            <div class="col card card-body rounded-0 fs-4 fw-bold">Dấu được rút gọn</div>
+                        </div>
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0">+</div>
+                            <div class="col card card-body rounded-0">+=</div>
+                        </div>
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0">-</div>
+                            <div class="col card card-body rounded-0">-=</div>
+                        </div>
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0">*</div>
+                            <div class="col card card-body rounded-0">*=</div>
+                        </div>
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0">/</div>
+                            <div class="col card card-body rounded-0">/=</div>
+                        </div>
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0">//</div>
+                            <div class="col card card-body rounded-0">//=</div>
+                        </div>
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0">%</div>
+                            <div class="col card card-body rounded-0">%=</div>
+                        </div>
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0">**</div>
+                            <div class="col card card-body rounded-0">**=</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspVí dụ:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">bien = </span><span class="o">8</span><br>
+                                    <span class="de">bien += </span><span class="o">7</span><br>
+                                    <span class="b">print</span><span class="de">(bien)</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên, chương trình đưa cho ta kết quả.
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">15</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
                     <hr class="hr">
                     </hr>
                     <div class="container">
@@ -446,7 +548,7 @@
                             <span class="btn btn-success"
                                 style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events: none"
                                 disabled>2.3</span>
-                            <span class="fs-6 text-success"> Hàm <span class="font-monospace">input</span></span>
+                            <span class="fs-6 text-success"> Nhập dữ liệu</span>
                         </a>
                         <a href="..\index.html" role="button" class="btn index text-start"
                             style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
@@ -459,7 +561,7 @@
                             <span class="btn btn-primary"
                                 style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events:none"
                                 disabled>2.1</span>
-                            <span class="fs-6 text-primary"> Hàm <span class="font-monospace">print</span></span>
+                            <span class="fs-6 text-primary"> Xuất dữ liệu</span>
                         </a>
                     </div>
                 </div>
