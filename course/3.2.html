@@ -34,10 +34,10 @@
                             Navigate
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="2.2.html">2.2 - Biến số </a>
+                            <li><a class="dropdown-item" href="4.1.html">4.1 - Kiểu dữ liệu xâu </a>
                             </li>
                             <li><a class="dropdown-item" href="..\index.html">Mục lục</a></li>
-                            <li><a class="dropdown-item" href="1.3.html">1.3 - Giới thiệu về môi trường Python Shell</a>
+                            <li><a class="dropdown-item" href="3.1.html">3.1 - Câu lệnh rẽ nhánh</a>
                             </li>
                         </ul>
                     </li>
@@ -58,36 +58,236 @@
             <div class="card mt-xl-3 mb-xl-3 shadow rounded-4">
                 <div class="card-body">
                     <div class="container">
-                        <p class="fs-3">2.3 - Hàm <span class="font-monospace">input</span></p>
+                        <p class="fs-3">3.2 - Câu lệnh lặp</p>
                     </div>
                     <br>
                     <div class="container">
-                        &nbsp&nbsp&nbsp&nbspỞ trong bài học này chúng ta sẽ nói về hàm <span class="font-monospace">input</span><br><br>
-                        <p class="fs-5 fw-bold">Biến số</p>
+                        <!-- Change da world, my final messenge, goodbye -->
+                        <!-- Farewell, code snipset the most useful feature is gone -->
+                        &nbsp&nbsp&nbsp&nbspỞ trong bài học này chúng ta sẽ nói về câu lệnh lặp<br><br>
+                        &nbsp&nbsp&nbsp&nbspKhi thực hiện chương trình, ta sẽ gặp nhiều việc thực hiện lặp đi lặp lại.
+                        Việc lặp lại đó có thể
+                        giống nhau y hệt hoặc chỉ khác giá trị tính toàn còn cách thức thực hiện là giống nhau.<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Câu lệnh lặp</p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTrong lập trình, ta có hai loại lặp phố biến nhất, lặp với số
+                        lần được xác định và lặp số lần chưa xác định trước<br>
+                        &nbsp&nbsp&nbsp&nbspNhững may thay, ngôn ngữ lập trình Python đã có cả hai loại lặp
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Vòng lặp với số lần lặp được xác định trước</p>
+                        &nbsp&nbsp&nbsp&nbspVòng lặp <code>for</code> cho phép thực hiện lặp với số lần lặp xác định
+                        trước.<br>
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">for &lttên biến&gt in &lttập hợp giá trị&gt:</span><br>
+                                    <span class="de">&nbsp&nbsp&nbsp&nbsp&ltkhối lệnh&gt </span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspcách thực hiện của cú pháp trên: <code>&lttên biến&gt</code> sẽ lần
+                        lượt nhận các giá trị trong <code>&lttập hợp giá trị&gt</code>, với mỗi lần nhận giá trị
+                        là mỗi lần thực hiện <code>&ltkhối lệnh&gt</code>. Ví dụ.
+                    </div>
+                    <div class="container" style="max-width: 300px;">
+                        <div class="card">
+                            <img src="why.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ đi phân tích đoạn mã trên<br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 1: ta dùng hàm <code>for</code> để lặp biến <code>x</code>
+                        với những số <code>1</code>, <code>2</code> và
+                        <code>3</code>.<br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 2: trong khi đang lặp, chúng ta dùng hàm <code>print</code> để
+                        in ra <code>"x = "</code>với biến<code> x</code><br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 3: ta gán ba số <code>1</code>, <code>2</code>, <code>3</code>
+                        lần lượt vào biến <code>a</code>, <code>b</code>, <code>c</code><br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 4: ta gán số <code>0</code> vào biến <code>s</code><br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 5: ta tiếp tục dùng hàm <code>for</code> để lặp biến
+                        <code>x</code> với những biến <code>a</code>, <code>b</code> và <code>c</code>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 6: ta dùng hàm <code>print</code> để in ra
+                        <code>"Tổng a+b+c = "</code>với biến<code> s</code><br>
+                        &nbsp&nbsp&nbsp&nbsp Sau khi chạy đoạn mã trên, kết quả của chúng ta nhận được:<br>
+                    </div>
+                    <div class="container" style="max-width: 300px;">
+                        <div class="card">
+                            <img src="you.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Một số câu lệnh <span class="font-monospace">for</span> mở rộng</p>
+                        &nbsp&nbsp&nbsp&nbspCú pháp đầu tiên:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">for &lttên biến&gt in range(n):</span><br>
+                                    <span class="de">&nbsp&nbsp&nbsp&nbsp&ltkhối lệnh&gt </span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspĐiều kiện của biến <code>n</code>:<br>
+                        &nbsp&nbsp&nbsp&nbsp - biến <code>n</code> phải là kiểu dữ liệu số nguyên<br>
+                        &nbsp&nbsp&nbsp&nbsp - biến <code>n</code> phải là một số nguyên dương<br>
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp trên thực hiện: <code>&lttên biến&gt</code> sẽ lần lượt
+                        nhận các giá trị từ 0, 1, 2,…, n với mỗi lần nhận giá trị là mỗi lần thực hiện
+                        <code>&ltkhối lệnh&gt</code><br>
+                        **Gài ảnh của T.Dũng làm ở đây và giải thích<br><br>
+                        Cú pháp thứ hai:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">for &lttên biến&gt in range(n, m):</span><br>
+                                    <span class="de">&nbsp&nbsp&nbsp&nbsp&ltkhối lệnh&gt </span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspĐiều kiện của biến <code>n</code> và biến <code>m</code>:<br>
+                        &nbsp&nbsp&nbsp&nbsp - biến <code>n</code> và biến <code>m</code> phải là kiểu dữ liệu
+                        số nguyên<br>
+                        &nbsp&nbsp&nbsp&nbsp - biến <code>n</code> và biến <code>m</code> phải là một số nguyên
+                        dương<br>
+                        &nbsp&nbsp&nbsp&nbsp - biến <code>n</code> &lt <code>m</code><br>
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp trên thực hiện: <code>&lttên biến&gt</code> sẽ lần lượt
+                        nhận các giá trị từ n, n+1, n+2,…, m-1 với mỗi lần nhận giá trị là mỗi lần thực hiện
+                        <code>&ltkhối lệnh&gt</code><br>
+                        **Gài ảnh của T.Dũng làm ở đây và giải thích<br><br>
+                        Cú pháp thứ ba:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">for &lttên biến&gt in range(a, b, c):</span><br>
+                                    <span class="de">&nbsp&nbsp&nbsp&nbsp&ltkhối lệnh&gt </span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp trên sẽ thực hiện như sau: <code>&lttên biến&gt</code> sẽ lần
+                        lượt
+                        nhận các giá trị từ a, a+c, a+2c,… <code>a</code> là giá trị khởi đầu, số sau bằng số trước cộng
+                        thêm <code>c</code>. Giá trị c luôn khác 0. Khi <code>c</code> &gt 0, các số sẽ thuộc
+                        <code>a</code> &lt= số &lt <code>b</code><br>
+                        &nbsp&nbsp&nbsp&nbspKhi <code>c</code> &lt 0, các số sẽ thuộc <code>b</code> &lt= số &lt
+                        <code>a</code>, với mỗi lần nhận giá trị thì mỗi lần thực hiện
+                        <code>&ltkhối lệnh&gt</code><br>
+                        **Gài ảnh của T.Dũng làm ở đây và giải thích<br><br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Vòng lặp với số lần lặp không được xác định trước</p>
+                        &nbsp&nbsp&nbsp&nbspVòng lặp <span>while</span> cho phép thực hiện lặp với số lần chưa xác
+                        định trước. Việc
+                        lặp được thực hiện khi có điều kiện thỏa mãn.<br>
+                        &nbsp&nbsp&nbsp&nbspTa có cú pháp cơ bản:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">while &lttên biến&gt:</span><br>
+                                    <span class="de">&nbsp&nbsp&nbsp&nbsp&ltkhối lệnh&gt </span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp trên thực hiện: Nếu <code>&ltđiều kiện&gt</code> đúng thì
+                        sẽ thực hiện <code>&ltkhối lệnh&gt</code><br>
+                        Insert some funni pew pew T.Dũng here and explain
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Câu lệnh <span class="font-monospace">continue</span></p>
+                        &nbsp&nbsp&nbsp&nbspCâu lệnh <code>continue</code> viết trong các khối lệnh của vòng lặp. Khi
+                        dung <code>continue</code>, các
+                        câu lệnh sau <code>continue</code> sẽ không thực hiện mà quay lại vòng lặp tiếp theo.
+                        Insert image here and explain
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Câu lệnh <span class="font-monospace">break</span></p>
+                        &nbsp&nbsp&nbsp&nbspLệnh <code>break</code> được viết trong khối lệnh của vòng lặp. Khi thực
+                        hiện câu lệnh <code>break</code>, chương trình sẽ thoát khỏi vòng lặp trong cùng chứa nó.
+                        Insert image here and explain
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Câu lệnh <span class="font-monospace">pass</span></p>
+                        &nbsp&nbsp&nbsp&nbspCâu lệnh <code>pass</code> là một câu lệnh rỗng. Khi câu lệnh <code>pass</code> được thực thi thì sẽ không
+                        có gì xảy ra. lệnh <code>pass</code> thường được sử dụng khi lập trình viên chưa biết phải viết mã nào
+                        Insert image here and explain
+                    </div><br><br>
+                    <div class="container fw-bold fst-italic">
+                        Nếu bạn đọc hết chương 3 thì chúc mừng bạn, bạn đã học được câu lệnh rẽ nhánh và câu lệnh lặp, đây là hai bài học quan trọng nhất trong lập trình.
                     </div>
                     <br><br><br>
                     <div class="d-grid gap-2 lesson-button">
-                        <a href="2.2.html" role="button" class="btn next-bg text-start"
+                        <a href="4.1.html" role="button" class="btn next-bg text-start"
                             style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
                             <div class="fs-5 text-success fw-bold" style="padding-bottom:0px; ">&gt Bài học tiếp theo
                             </div>
                             <span class="btn btn-success"
                                 style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events: none"
-                                disabled>2.2</span>
-                            <span class="fs-6 text-success"> Biến số </span>
+                                disabled>4.1</span>
+                            <span class="fs-6 text-success"> Dữ liệu kiểu xâu </span>
                         </a>
                         <a href="..\index.html" role="button" class="btn index text-start"
                             style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
                             <div class="fs-5 fw-bold" style="padding-bottom:0px; ">Quay trở về mục lục</div>
                         </a>
-                        <a href="1.3.html" role="button" class="btn next-bg text-start"
+                        <a href="3.1.html" role="button" class="btn next-bg text-start"
                             style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
                             <div class="fs-5 text-primary fw-bold" style="padding-bottom:0px;">
                                 &lt Bài học trước </div>
                             <span class="btn btn-primary"
                                 style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events:none"
-                                disabled>1.3</span>
-                            <span class="fs-6 text-primary"> Giới thiệu về môi trường Python Shell</span>
+                                disabled>3.1</span>
+                            <span class="fs-6 text-primary"> Câu lệnh rẽ nhánh</span>
                         </a>
                     </div>
                 </div>
