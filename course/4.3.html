@@ -34,10 +34,10 @@
                             Navigate
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="2.2.html">2.2 - Biến số </a>
+                            <li><a class="dropdown-item" href="4.4.html">4.4 - ???</a>
                             </li>
                             <li><a class="dropdown-item" href="..\index.html">Mục lục</a></li>
-                            <li><a class="dropdown-item" href="1.3.html">1.3 - Giới thiệu về môi trường Python Shell</a>
+                            <li><a class="dropdown-item" href="4.2.html">4.2 - Một số thao tác với chuỗi xâu</a>
                             </li>
                         </ul>
                     </li>
@@ -58,36 +58,360 @@
             <div class="card mt-xl-3 mb-xl-3 shadow rounded-4">
                 <div class="card-body">
                     <div class="container">
-                        <p class="fs-3">2.3 - Hàm <span class="font-monospace">input</span></p>
+                        <p class="fs-3">4.3 - Kiểu dữ liệu danh sách</p>
                     </div>
                     <br>
                     <div class="container">
-                        &nbsp&nbsp&nbsp&nbspỞ trong bài học này chúng ta sẽ nói về hàm <span class="font-monospace">input</span><br><br>
-                        <p class="fs-5 fw-bold">Biến số</p>
+                        &nbsp&nbsp&nbsp&nbspỞ trong bài học này chúng ta sẽ nói về Kiểu dữ liệu danh sách<br><br>
+                        &nbsp&nbsp&nbsp&nbspBạn thấy công dụng của biến là vô cùng quan trọng, nhưng có một
+                        trường hợp là ta phải chứa hơn 1000 dữ liệu khác nhau, ta không thể dùng 1000 biến
+                        để chứa nguyên 1000 khác nhau.<br>
+                        &nbsp&nbsp&nbsp&nbspBạn đừng từ bỏ vội, đến lúc kiểu dữ liệu danh sách đến để cứu
+                        bạn trong trường hợp trên.<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">A. Khai báo dữ liệu danh sách</p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspDanh sách là một tập hợp các phần tử. Ta có ví dụ như: danh sách
+                        chữ cái màu sắc, môn học,.. Để khai báo một danh dách, ta sẽ sử dụng cú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&ltbiến danh sách&gt = [&ltphần tử 0&gt, &ltphần tử 1&gt, &ltphần tử 2&gt,...]</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbsp(Các phần tử của danh sách có thể là số nguyên, số thực, chuỗi
+                        xâu)<br>
+                        Hình ảnh ở đây và giải thích<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">B. Lấy số lượng phần tử trong danh sách</p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCũng giống với cách chuỗi xâu lấy độ dài của xâu đó, ta dùng hàm
+                        <code>len(&ltbiến danh sách&gt)</code><br>
+                        &nbsp&nbsp&nbsp&nbspVí dụ và giải thích<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">C. Truy cập đến phần tử trong danh sách lặp</p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCũng tương tự với cách chuỗi xâu truy cập bât kỳ ký tự trong xâu
+                        đó, cú pháp để truy cập bất kỳ phần tử trong danh sách:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến&gt = &ltbiến danh sách&gt[&ltchỉ số phần tử&gt]</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa gọi <code>&ltĐộ dài biến danh sách&gt</code> là n để cho ngắn
+                        gọn.<br>
+                        &nbsp&nbsp&nbsp&nbspGiống như chỉ số của chuỗi xâu, <code>&ltchỉ sô phần tử&gt</code>
+                        được đánh số từ 0, 1, 2,..., n-1 (nghĩa là đọc từ trai sang phải), hoặc -1, -2,..., -n
+                        (nghĩa là đọc từ phải sang trái).<br>
+                        &nbsp&nbsp&nbsp&nbspVí dụ sẽ ở đây nếu có ảnh và giải thích<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">D. Lấy nhiều phần tử liên tiếp trong danh sách</p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbsp Tương tự cách chuỗi xâu lấy chuỗi con từ xâu đó, để lấy nhiều
+                        phần tử trong biến danh sách từ chỉ số <code>a</code> đến chỉ số <code>b</code>-1
+                        (<code>a</code> &lt= <code>b</code>), ta có cú pháp sau<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến danh sách con&gt = &lttên biến danh sách&gt[a:b]</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTất nhiên là hình ảnh ở đây<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">E. Ghép danh sách</p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspGiống như cách ghép xâu, ta vẫn có thể ghép các biến danh sách con
+                        thành một biến danh sách mới.<br>
+                        &nbsp&nbsp&nbsp&nbspCú pháp để ghép xâu là:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&ltdanh sách&gt = &ltdanh sách con 1&gt + &ltdanh sách con 2&gt + ...</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">F. Lặp danh sách</p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspVẫn giống như cách chuôi xâu lặp, Python không chỉ hỗ trợ mình
+                        chuỗi xâu mà còn hỗ trợ kiểu loại dữ liệu danh sách.<br>
+                        &nbsp&nbsp&nbsp&nbspCú pháp cho câu lệnh trên:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên danh sách mỡi&gt = &lttên danh sách bị lặp&gt*&ltsố lần lặp&gt</span><br>
+                                    <span class="com">#hoặc</span><br>
+                                    <span class="de">&lttên danh sách mỡi&gt = &ltsố lần lặp&gt*&lttên danh sách bị lặp&gt</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">G. Toán tử <span class="font-monospace">in</span></p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTương tự như cú pháp của xâu, cú pháp của danh sách:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến danh sách 1&gt in &lttên biến danh sách 2&gt</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspPhép toán
+                        <code>&lttên biến danh sách 1&gt in &lttên biến danh sách 2&gt</code> trả về
+                        <code>True</code> nếu <code>&lttên biến danh sách 1&gt</code> là danh sách con của
+                        <code>&lttên biến danh sách 2&gt</code>. Ngược lại, phép toán trả về giá trị
+                        <code>False</code>.<br>
+                        &nbsp&nbsp&nbsp&nbsp Image provider belike: here comes the money!
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">H. Phương thức <span class="font-monospace">index</span></p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp:
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến&gt = &lttên biến danh sách&gt.index(&lttên danh sách con&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTương tự như chuỗi xâu, cú pháp trên trả về vị trí đầu tiên của
+                        <code>&lttên danh sách con&gt</code> xuất hiện trong <code>&ltbiến tên danh sách&gt</code>,
+                        nhưng
+                        khi <code>&lttên danh sách con&gt</code> không xuất hiện trong
+                        <code>&lttên biến danh sách&gt</code> thì chương trình báo lỗi.<br>
+                        Image here<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">I. Hàm <span class="font-monospace">min</span>, <span
+                                class="font-monospace">max</span> trên danh sách</p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspHàm <code>max</code> và hàm <code>min</code> có hõ trợ cho kiểu dữ
+                        liệu danh sách.<br>
+                        &nbsp&nbsp&nbsp&nbspCú pháp của hàm <code>max</code>:
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">max(&lttên danh sách&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách thức hoạt động: trả về phần tử lớn nhất trong
+                        <code>&lttên danh sách&gt</code><br>
+                        &nbsp&nbsp&nbsp&nbspTa lại có cú pháp của hàm <code>min</code>:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">min(&lttên danh sách&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách thức hoạt động: trả về phần tử nhỏ nhất trong
+                        <code>&lttên danh sách&gt</code><br>
+                        Hình ảnh<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">J. Thêm phần tử vào trong danh sách</p>
+                    </div>
+                    <div class="container fw-bold">
+                        * Hàm <span class="font-monospace">append</span>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&ltdanh sách&gt.append(&ltphần tử&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp trên thực hiện: thêm <code>&ltphần tử&gt</code> vào
+                        cuối <code>&ltdanh sách&gt</code>.<br>
+                        Ảnh minh họa<br>
+                    </div>
+                    <div class="container fw-bold">
+                        * Hàm <span class="font-monospace">extend</span>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&ltdanh sách 1&gt.extend(&ltdanh sách 2&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="cntainer">
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp trên thực hiện: nối <code>&ltdanh sách 2&gt</code> vào
+                        cuối <code>&ltdanh sách 1&gt</code>.<br>
+                        Ảnh minh họa<br>
+                    </div>
+                    <div class="container">
+                        <span class="fw-bold">Lưu ý: </span> hàm <code>append</code> và hàm <code>extend</code> có khác nhau:
+                        hàm <code>&ltdanh sách&gt.append(&ltđối tượng&gt)</code> thêm <code>&ltđối tượng&gt</code>
+                        vào <code>&ltdanh sách&gt</code> như một phần tử. Hàm
+                        <code>&ltdanh sách&gt.extend(&ltđối tượng&gt)</code>, các phần tử của
+                        <code>&ltđối tượng&gt</code> vào <code>&ltdanh sách&gt</code>.
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">K. Hàm <span class="font-monospace">sum</span></p>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp cho hàm <code>sum</code>:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến&gt = sum(&ltdanh sách&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp thực hiện: tính tổng các phần tử của <code>&ltdanh sách&gt</code><br>
+                        <span class="fw-bold">* Lưu ý:</span> các phần tử phải là kiểu dữ liệu số nguyên hoặc số thực<br>
+                        Hình ở đây
                     </div>
                     <br><br><br>
                     <div class="d-grid gap-2 lesson-button">
-                        <a href="2.2.html" role="button" class="btn next-bg text-start"
+                        <a href="4.4.html" role="button" class="btn next-bg text-start"
                             style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
                             <div class="fs-5 text-success fw-bold" style="padding-bottom:0px; ">&gt Bài học tiếp theo
                             </div>
                             <span class="btn btn-success"
                                 style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events: none"
-                                disabled>2.2</span>
-                            <span class="fs-6 text-success"> Biến số </span>
+                                disabled>4.4</span>
+                            <span class="fs-6 text-success"> ??? </span>
                         </a>
                         <a href="..\index.html" role="button" class="btn index text-start"
                             style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
                             <div class="fs-5 fw-bold" style="padding-bottom:0px; ">Quay trở về mục lục</div>
                         </a>
-                        <a href="1.3.html" role="button" class="btn next-bg text-start"
+                        <a href="4.2.html" role="button" class="btn next-bg text-start"
                             style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
                             <div class="fs-5 text-primary fw-bold" style="padding-bottom:0px;">
                                 &lt Bài học trước </div>
                             <span class="btn btn-primary"
                                 style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events:none"
-                                disabled>1.3</span>
-                            <span class="fs-6 text-primary"> Giới thiệu về môi trường Python Shell</span>
+                                disabled>4.2</span>
+                            <span class="fs-6 text-primary"> Một số thao tác với chuỗi xâu </span>
                         </a>
                     </div>
                 </div>
