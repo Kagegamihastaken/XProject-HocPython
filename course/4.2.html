@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kagegami's Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lesson_button.css" />
+    <link rel="stylesheet" href="code_color_format.css" />
+    <link rel="stylesheet" href="..\navbar.css" />
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HocPython</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="..\index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Navigate
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="4.3.html">4.3 - Kiểu dữ liệu danh sách </a>
+                            </li>
+                            <li><a class="dropdown-item" href="..\index.html">Mục lục</a></li>
+                            <li><a class="dropdown-item" href="4.1.html">4.1 - Kiêu dữ liệu chuỗi xâu</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <div class="bg-secondary-subtle">
+        <br>
+        <div class="container" style="max-width: 835px;">
+            <div class="card mt-xl-3 mb-xl-3 shadow rounded-4">
+                <div class="card-body">
+                    <div class="container">
+                        <p class="fs-3">4.2 - Một số thao tác với chuỗi xâu</p>
+                    </div>
+                    <br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ trong bài học này chúng ta sẽ cùng đi một chặng đường dài về một số thao tác với chuỗi xâu<br><br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">A. Tách chuỗi</p>
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên chuỗi&gt.split()</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách thực hiện: tách chuỗi thành một danh sách các chuỗi con mà kí tự phân
+                        tách là các kí tự cách (space)<br>
+                        &nbsp&nbsp&nbsp&nbspVí dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\a.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>str1</code> và gán xâu vào biến
+                        <code>"Tự học Toán"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta tạo biến <code>danh_sach</code> và gán hàm
+                        <code>str1.split(" ")</code>, biến <code>danh_sach</code> sẽ trở thành biến có kiểu dữ liệu danh
+                        sách vì
+                        tách chuỗi của biến <code>str1</code> với ký tự phân cách là <code>" "</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: Cuối cùng, ta in biến <code>danh_sach</code> ra màn hình
+                        console.<br>
+                        &nbsp&nbsp&nbsp&nbspkhi ta chạy đoạn mã trên, kết quả của đoạn mã trên đưa ra:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\b.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbsp + Dạng tham số của hàm <code>split</code>:<br>
+                    </div>
+                    <div class="container fw-bold">
+                        &nbsp&nbsp&nbsp&nbsp * Tham số ký tự phân cách<br>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp:
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên danh sách chuỗi được tách&gt = &lttên chuỗi&gt.split(&ltký tự phân cách&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspVí dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\lost-1.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ đi phân tích đoạn mã trên:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>str1</code> và gán xâu
+                        <code>"1#2#3#4#5"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: giống với dòng 1, ta tạo biến <code>str2</code> và gán xâu
+                        <code>"A%B%C%D%H%N"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta khai báo biến <code>danh_sach</code> và gán hàm
+                        <code>str1.split("#")</code>, hàm đấy sẽ tách biến xâu <code>str1</code> với ký tự phân cách
+                        <code>"#"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 4: cũng tương tự như dòng 3, ta tạo biến <code>Danh_sach</code> và gán
+                        hàm <code>str2.split("%")</code>, hàm đấy sẽ tách biến xâu <code>str2</code> với ký tự phân cách
+                        <code>"%"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 5: cuối cùng, ta in biến <code>danh_sach</code> và biến
+                        <code>Danh_sach</code>, được phân cách với ký tự <code>"\n"</code> <br>
+                        &nbsp&nbsp&nbsp&nbspKhi ta chạy đoạn mã trên, kết quả của đoạn mã cho:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\lost-2.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container fw-bold">
+                        &nbsp&nbsp&nbsp&nbsp * Tham số về số chuỗi tối đa tách được
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên danh sách chuỗi được tách&gt = &lttên chuỗi&gt.split(&ltký tự phân cách&gt, &ltsố chuỗi tối đa tách được&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspVí dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\c.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ đi phân tích đoạn mã trên:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>str1</code> và gán xâu
+                        <code>"1#2#3#4#5"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: giống với dòng 1, ta tạo biến <code>str2</code> và gán xâu
+                        <code>"A%B%C%D%H%N"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta khai báo biến <code>danh_sach</code> và gán hàm
+                        <code>str1.split("#", 2)</code>, khác so với ví dụ trên là thêm tham số <code>2</code> vào trong
+                        hàm <code>str1.split("#", 2)</code>, hàm đấy sẽ tách biến xâu <code>str1</code> với ký tự phân
+                        cách <code>"#"</code>, số lần chuỗi được tách bị giới hạn đến <code>2</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 4: tương tự, ta khai báo biến <code>Danh_sach</code> và gán hàm
+                        <code>str1.split("%", 3)</code>, hàm đấy sẽ tách biến xâu <code>str2</code> với ký tự phân
+                        cách <code>"%"</code>, số lần chuỗi được tách bị giới hạn đến <code>3</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 5: cuối cùng, ta in biến <code>danh_sach</code> và biến
+                        <code>Danh_sach</code>, được phân cách với ký tự <code>"\n"</code> <br>
+                        &nbsp&nbsp&nbsp&nbspKhi ta chạy đoạn mã trên, kết quả của đoạn mã cho:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\d.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container fw-bold">
+                        &nbsp&nbsp&nbsp&nbsp * lưu ý: tham số -1 là tách toàn bộ chuỗi.<br>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspVí dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\e.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa tiếp tục đi phân tích:<br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 1: ta khởi tạo biến <code>str1</code> và gán với xâu
+                        <code>"1#2#3#4#5"</code><br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 2: ta tạo biến <code>danh_sach</code> với hàm
+                        <code>str1.split("#", -1)</code>, hàm đấy sẽ tách biến xâu <code>str1</code> với ký tự phân cách
+                        <code>"#"</code>, nhưng vì tham số là <code>-1</code> nên hàm mặc định sẽ tách toàn bộ xâu của
+                        biến <code>str1</code><br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 3: ta in biến <code>danh_sach</code> với ký tự phân cách là
+                        <code>"\n"</code><br>
+                        &nbsp&nbsp&nbsp&nbspSau khi chúng ta chạy đoạn mã trên, chương trình kết quả đưa ra:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\f.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">B. Phép toán <span class="font-monospace">in</span></p>
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên chuỗi 1&gt in &lttên chuỗi 2&gt</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspPhép toán <code>&lttên chuỗi 1&gt in &lttên chuỗi 2&gt</code> trả về
+                        <code>True</code> nếu <code>&lttên chuỗi 1&gt</code> là chuỗi con của
+                        <code>&lttên chuỗi 2&gt</code>. Ngược lại, phép toán trả về giá trị <code>False</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspVí dụ:
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\g.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ phân tích đoạn mã trên:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>str1</code> với xâu
+                        <code>"1#2#3#4#5"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta tiếp tục khai báo biến <code>a</code> với xâu
+                        <code>"1"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta lại tiếp tục khai báo biến <code>b</code> với xâu
+                        <code>"2"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 4, 5: chúng ta xét biến xâu <code>a</code> có phải là xâu con của biến
+                        xâu <code>str1</code>, vì xâu <code>"1"</code> là xâu con của xâu <code>"1#2#3#4#5"</code>, cho
+                        nên chúng ta in xâu <code>"a là chuỗi con của str1"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 6: chúng ta xét biến xâu <code>b</code> có phải là xâu con của biến xâu
+                        <code>str1</code>, nhưng vì xâu <code>"6"</code> không là xâu con của xâu
+                        <code>"1#2#3#4#5"</code>, cho nên bỏ qua dòng 7.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 8, 9: vì điệu kiện trên không thỏa mãn, chúng ta in ra xâu
+                        <code>"b không là chuỗi con của str1"</code><br>
+                        &nbsp&nbsp&nbsp&nbspSau khi chạy đoạn mã trên, ta có kết quả của chương trình:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\h.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">C. Phương thức đếm số lần xuất hiện</p>
+                        &nbsp&nbsp&nbsp&nbsp + Dạng 1<br>
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến số&gt = &lttên chuỗi&gt.count(&lttên chuỗi con&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspVí dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\i.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ đi phân tích đoạn mã trên:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>str1</code> và gán với xâu
+                        <code>"ababababeeeeeeeeeee"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta khai báo biến <code>so_lan_xuat_hien</code> với hàm
+                        <code>str1.count("ab")</code>, hàm này sẽ cho chúng ta biết có bao nhiều lần xâu
+                        <code>"ab"</code> xuất hiện ở trong biến xâu <code>so_lan_xuat_hien</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta in biến <code>so_lan_xuat_hien</code> ra màn hình console.<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên, ta nhận được kết quả.<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\j.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container fw-bold">*Một số dạng tham số</div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến số&gt = &lttên chuỗi&gt.count(&lttên chuỗi con&gt, a)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp thực hiện: phương thức trả về số lần xuất hiện của chuỗi
+                        <code>&lttên chuỗi con&gt</code> trong <code>&lttên chuỗi&gt</code> tính từ chỉ số
+                        <code>a</code><br>
+                        &nbsp&nbsp&nbsp&nbspVí dụ:
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\k-what.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ đi phân tích đoạn mã trên:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>str1</code> và gán với xâu
+                        <code>"ababababeeeeeeeeeee"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta khai báo biến <code>so_lan_xuat_hien</code> với hàm
+                        <code>str1.count("ab", 2)</code>, hàm này sẽ cho chúng ta biết có bao nhiều lần xâu
+                        <code>"ab"</code> xuất hiện ở trong biến xâu <code>so_lan_xuat_hien</code> bắt đầu từ chỉ số
+                        <code>2</code> đến hết.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta in biến <code>so_lan_xuat_hien</code> ra màn hình console.<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên, ta nhận được kết quả.<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\k-missing.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbsp + Dạng 2<br>
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến số&gt = &lttên chuỗi&gt.count(&lttên chuỗi con&gt, a, b)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp thực hiện: phương thức trả về số lần xuất hiện của
+                        <code>&lttên chuỗi con&gt</code> trong <code>&lttên chuỗi&gt</code> tính từ chỉ số
+                        <code>a</code> đến <code>b</code>-1.<br>
+                        &nbsp&nbsp&nbsp&nbspVí dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\k.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ đi phân tích đoạn mã trên:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>str1</code> và gán với xâu
+                        <code>"ababababeeeeeeeeeee"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta khai báo biến <code>so_lan_xuat_hien</code> với hàm
+                        <code>str1.count("ab", 2)</code>, hàm này sẽ cho chúng ta biết có bao nhiều lần xâu
+                        <code>"ab"</code> xuất hiện ở trong biến xâu <code>so_lan_xuat_hien</code> bắt đầu từ chỉ số
+                        <code>2</code> đến chỉ số <code>5</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta in biến <code>so_lan_xuat_hien</code> ra màn hình console.<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên, ta nhận được kết quả.<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\l.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">D. Phương thức tìm kiếm</p>
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến&gt = &lttên chuỗi&gt.find(&lttên chuỗi con&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp thực hiện: trả về vị trí chỉ số đầu tiên mà chuỗi &lttên chuỗi
+                        con&gt trong &lttên chuỗi&gt. Nếu không có thì kết quả trả về -1</code><br>
+                        &nbsp&nbsp&nbsp&nbspVí dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\m.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ đi vào phân tích của đoạn mã trên:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>str1</code> và gán với xâu <code>"ab"</code>,
+                        khai báo biến <code>str2</code> và gán với xâu <code>acb</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta lại tiếp tục khai báo biến <code>str3</code> và gán với xâu
+                        <code>"acabab"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta khai báo biến <code>n1</code> và gán hàm
+                        <code>str3.find(str1)</code>, hàm này dùng để trả vị trí chỉ số mà biến xâu <code>str1</code>
+                        (tức là <code>ab</code>) ở trong biến xâu <code>str3</code>. Vì xâu <code>"ab"</code> có trong
+                        xâu <code>"acabab"</code> nên hàm này chắc chắn sẽ trả vị trí của biến xâu str1.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 4: ta lại khai báo biến <code>n2</code> và gán hàm
+                        <code>str3.find(str2)</code>, hàm này dùng để trả vị trí chỉ số mà biến xâu <code>str2</code>
+                        (tức là <code>acb</code>) ở trong biến xâu <code>str3</code>. Nhưng vì xâu <code>"acb"</code>
+                        không có trong
+                        xâu <code>"acabab"</code> nên hàm này trả về <code>-1</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 5: ta in biến <code>n1</code> và biến <code>n2</code>, được phân cách
+                        bởi ký hiệu <code>"\n"</code><br>
+                        &nbsp&nbsp&nbsp&nbspSau khi chạy đoạn mã trên, ta nhận được kết quả:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\n.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container fw-bold">
+                        * Tham số với phương thức <span class="font-monospace">find()</span>:
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbsp + Dạng 1<br>
+                        &nbsp&nbsp&nbsp&nbspCú pháp:
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến&gt = &lttên chuỗi&gt.find(&lttên chuỗi con&gt, a)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp thực hiện: phương thức trả về vị trí chỉ số đầu tiên mà
+                        <code>&lttên chuỗi con&gt</code> xuất hiện trong <code>&lttên chuỗi&gt</code> tính từ chỉ số
+                        <code>a</code><br><br>
+                        &nbsp&nbsp&nbsp&nbsp + Dạng 2<br>
+                        &nbsp&nbsp&nbsp&nbspCú pháp:
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến&gt = &lttên chuỗi&gt.find(&lttên chuỗi con&gt, a, b)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp thực hiện: phương thức trả về vị trí chỉ số đầu tiên mà
+                        <code>&lttên chuỗi con&gt</code> xuất hiện trong <code>&lttên chuỗi&gt</code> tính từ chỉ số
+                        <code>a</code> đến chỉ số <code>b</code>-1<br><br>
+                        &nbsp&nbsp&nbsp&nbsp * Mở rộng: hàm <code>index()</code> có cú pháp sau:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến&gt = &lttên chuỗi&gt.index(&lttên chuỗi con&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp trên cũng trả về vị trí đầu tiên của
+                        <code>&lttên chuỗi con&gt</code> xuất hiện trong <code>&lttên chuỗi&gt</code> nhưng khi
+                        <code>&lttên chuỗi con&gt</code> không xuất hiện trong <code>&lttên chuỗi&gt</code> thì chương
+                        trình báo lỗi.<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">E. Phương thức thay thế</p>
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên chuỗi mới&gt = &lttên chuỗi gốc&gt.replace(&ltchuỗi cũ&gt, &lchuỗi mới&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp thực hiện: trả về <code>&lttên chuỗi mới&gt</code> được tạo
+                        thành bằng cách thay thế tất cả các <code>&ltchuỗi cũ&gt</code> bằng
+                        <code>&ltchuỗi mới&gt</code> trong <code>&lttên chuỗi gốc&gt</code><br>
+                        &nbsp&nbsp&nbsp&nbspVí dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\o.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspta sẽ cùng đi phân tích đoạn mã trên.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta tạo biến <code>st</code> rồi gán xâu <code>"aaaebaa"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta khai báo biến <code>str1</code> rồi gán hàm
+                        <code>st.replace("aa", "TT")</code>, hàm này thay tất cả các xâu <code>"aa"</code> thành xâu
+                        <code>"TT"</code> trong biến xâu <code>st</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: cuối cùng, ta in ra biến <code>str1</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi chạy đoạn mã trên, ta nhận được kết quả:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\p.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container fw-bold">
+                        *Tham số với replace():
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên chuỗi mới&gt = &lttên chuỗi gốc&gt.replace(&ltchuỗi cũ&gt, &lchuỗi mới&gt, &lsố lần thay đổi tối đa&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp thực hiện: trả về <code>&lttên chuỗi mới&gt</code> được tạo
+                        thành bằng cách thay thế tất cả các <code>&ltchuỗi cũ&gt</code> bằng
+                        <code>&ltchuỗi mới&gt</code> trong <code>&lttên chuỗi gốc&gt</code> với số lần thay thế là
+                        <code>&ltsố lần thay đổi tối đa&gt</code><br>. (việc thay thế bắt đầu từ trái sang phải)<br>
+                        &nbsp&nbsp&nbsp&nbspVí dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\q.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspta sẽ cùng đi phân tích đoạn mã trên.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta tạo biến <code>st</code> rồi gán xâu <code>"aaaaaabb"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta khai báo biến <code>str1</code> rồi gán hàm
+                        <code>st.replace("aa", "EE")</code>, hàm này thay tất cả các xâu <code>"aa"</code> thành xâu
+                        <code>"EE"</code> trong biến xâu <code>st</code> với số lần thay đổi tối đa là
+                        <code>2</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: cuối cùng, ta in ra biến <code>str1</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi chạy đoạn mã trên, ta nhận được kết quả:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\r.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">F. Phương thức is_()</p>
+                    </div>
+                    <div class="container fw-bold">
+                        * Phương thức isdigit()<br>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên chuỗi&gt.isdigit()</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách thức hoạt động: trả về <code>True</code> nếu
+                        <code>&lttên chuỗi&gt</code> chỉ chứa
+                        ký tự số. Ngược lại trả về giá trị <code>False</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspTa có ví dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\s.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ phân tích cách đoạn mã trên hoạt động:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>str1</code> và gán xâu
+                        <code>"1234"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta tiếp tục khai báo biến <code>str2</code> và gán xâu
+                        <code>"1234abd"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta ỉn ra hàm <code>str1.isdigit()</code> và hàm
+                        <code>str2.isdigit()</code>, được ngăn cách bởi ký hiệu <code>"\n"</code>. Hàm
+                        <code>str1.isdigit()</code> sẽ kiểm tra biến xâu <code>str1</code> chỉ chứa số hay không, vì xâu
+                        <code>"1234"</code> chỉ toàn chứa số nên hàm này sẽ trả lại <code>True</code>.
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbspHàm
+                        <code>str2.isdigit()</code> kiểm tra biến xâu <code>str2</code> chỉ chứa số hay không, nhưng vì
+                        xâu <code>"1234abd"</code> không hoàn toàn chứa số nên hàm này sẽ trả lại
+                        <code>False</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên, kết quả của chương trình trên.<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\t.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container fw-bold">
+                        * Phương thức isspace()
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên chuỗi&gt.isspace()</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách thức hoạt động: trả về <code>True</code> nếu
+                        <code>&lttên chuỗi&gt</code> chỉ chứa ký tự trắng. Ngược lại trả về giá trị
+                        <code>False</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspVí dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\u.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ trong đoạn mã trên, ta sẽ phân tích cách đoạn mã trên hoạt động:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>str1</code> và gán xâu
+                        <code>"&nbsp&nbsp&nbsp&nbsp&nbsp"</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta lại khai báo biến <code>str2</code> và gán xâu
+                        <code>"1234abd&nbsp&nbsp&nbsp&nbsp&nbsp"</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta dùng hàm <code>print</code> để in ra hàm
+                        <code>str1.isspace()</code> và hàm <code>str2.isspace()</code>. Hàm <code>str1.isspace()</code>
+                        sẽ kiểm tra biến xâu <code>str1</code> chỉ chứa ký tự trắng hay không, vì xâu
+                        <code>"&nbsp&nbsp&nbsp&nbsp"</code> chỉ chứa ký tự trắng cho nên hàm này sẽ trả lại
+                        <code>True</code>. <br>&nbsp&nbsp&nbsp&nbsp&nbspHàm <code>str2.isspace()</code>
+                        sẽ kiểm tra biến xâu <code>str2</code> chỉ chứa ký tự trắng hay không, nhưng vì xâu
+                        <code>"1234abd&nbsp&nbsp&nbsp&nbsp"</code> không hoàn toàn chứa ký tự trắng cho nên hàm này sẽ
+                        trả lại
+                        <code>False</code><br>
+                        &nbsp&nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên, phần mềm đươa ra kết quả:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\v.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container fw-bold">
+                        * Phương thức islower()
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên chuỗi&gt.islower()</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách thức hoạt động: sẽ trả về <code>True</code> nếu
+                        <code>&lttên chuỗi&gt</code> không chứa ký tự chữ hoa. Ngược lại trả về giá trị
+                        <code>False</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspTa có ví dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\w.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ trong đoạn mã trên, ta sẽ phân tích cách đoạn mã trên hoạt động:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>str1</code> và gán xâu
+                        <code>"1234abd"</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta lại khai báo biến <code>str2</code> và gán xâu
+                        <code>"1234abD"</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta dùng hàm <code>print</code> để in ra hàm
+                        <code>str1.islower()</code> và hàm <code>str2.islower()</code>. Hàm <code>str1.islower()</code>
+                        sẽ kiểm tra biến xâu <code>str1</code> không chứa ký tự chữ hoa hay không, vì xâu
+                        <code>"1234abd"</code> không chứa ký tự chữ hoa cho nên hàm này sẽ trả lại
+                        <code>True</code>. <br>&nbsp&nbsp&nbsp&nbsp&nbspHàm <code>str2.islower()</code>
+                        sẽ kiểm tra biến xâu <code>str2</code> không chứa ký tự chữ hoa hay không, nhưng vì xâu
+                        <code>"1234abD"</code> có chứa ký tự chữ hoa cho nên hàm này sẽ
+                        trả lại
+                        <code>False</code><br>
+                        &nbsp&nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên, phần mềm đươa ra kết quả:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\x.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container fw-bold">
+                        * Phương thức isupper()
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên chuỗi&gt.isupper()</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách thức hoạt động: sẽ trả về <code>True</code> nếu
+                        <code>&lttên chuỗi&gt</code> không chứa ký tự chữ thường. Ngược lại trả về giá trị
+                        <code>False</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspTa có ví dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\y.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ trong đoạn mã trên, ta sẽ phân tích cách đoạn mã trên hoạt động:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>str1</code> và gán xâu
+                        <code>"1234abd"</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta lại khai báo biến <code>str2</code> và gán xâu
+                        <code>"1234ABD"</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta dùng hàm <code>print</code> để in ra hàm
+                        <code>str1.isupper()</code> và hàm <code>str2.isupper()</code>. Hàm <code>str1.isupper()</code>
+                        sẽ kiểm tra biến xâu <code>str1</code> không chứa ký tự chữ thường hay không, vì xâu
+                        <code>"1234abd"</code> có chứa ký tự chữ thường cho nên hàm này sẽ trả lại
+                        <code>False</code>. <br>&nbsp&nbsp&nbsp&nbsp&nbspHàm <code>str2.isupper()</code>
+                        sẽ kiểm tra biến xâu <code>str2</code> không chứa ký tự chữ thường hay không, nhưng vì xâu
+                        <code>"1234ABD"</code> không chứa ký tự chữ thường cho nên hàm này sẽ
+                        trả lại
+                        <code>True</code><br>
+                        &nbsp&nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên, phần mềm đươa ra kết quả:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\z.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container fw-bold">
+                        * Phương thức isalpha()
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên chuỗi&gt.isalpha()</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách thức hoạt động: sẽ trả về <code>True</code> nếu
+                        <code>&lttên chuỗi&gt</code> chỉ chứa ký tự bảng chữ cái. Ngược lại trả về giá trị
+                        <code>False</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspTa có ví dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\aa.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ phân tích cách đoạn mã trên hoạt động:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>str1</code> và gán xâu
+                        <code>"ABDabd"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta tiếp tục khai báo biến <code>str2</code> và gán xâu
+                        <code>"1234ABD"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta ỉn ra hàm <code>str1.isalpha()</code> và hàm
+                        <code>str2.isalpha()</code>, được ngăn cách bởi ký hiệu <code>"\n"</code>. Hàm
+                        <code>str1.isalpha()</code> sẽ kiểm tra biến xâu <code>str1</code> chỉ chứa bảng chữ cái hay
+                        không, vì xâu
+                        <code>"ABDabd"</code> chỉ toàn chứa bảng chữ cái nên hàm này sẽ trả lại <code>True</code>.
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbspHàm
+                        <code>str2.isalpha()</code> kiểm tra biến xâu <code>str2</code> chỉ chứa bảng chữ cái hay không,
+                        nhưng vì
+                        xâu <code>"1234ABD"</code> không hoàn toàn chứa bảng chữ cái nên hàm này sẽ trả lại
+                        <code>False</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên, kết quả của chương trình trên.<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\ab.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container fw-bold">
+                        * Phương thức istitle()
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên chuỗi&gt.istitle()</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách thức hoạt động: sẽ trả về <code>True</code> nếu
+                        <code>&lttên chuỗi&gt</code> có các từ đều bắt đầu là chữ hoa. Ngược lại trả về giá trị
+                        <code>False</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspTa có ví dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\ac.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ phân tích cách đoạn mã trên hoạt động:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>str1</code> và gán xâu
+                        <code>"Do It Yourself"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta tiếp tục khai báo biến <code>str2</code> và gán xâu
+                        <code>"do it yourself"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta ỉn ra hàm <code>str1.istitle()</code> và hàm
+                        <code>str2.istitle()</code>, được ngăn cách bởi ký hiệu <code>"\n"</code>. Hàm
+                        <code>str1.istitle()</code> sẽ kiểm tra biến xâu <code>str1</code> có các từ đều bắt đầu là chữ
+                        hoa hay không, vì xâu
+                        <code>"Do It Yourself"</code> có các từ đều bắt đầu là chữ hoa nên hàm này sẽ trả lại
+                        <code>True</code>.
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbspHàm
+                        <code>str2.istitle()</code> kiểm tra biến xâu <code>str2</code> có các từ đều bắt đầu là chữ hoa
+                        hay không, nhưng vì
+                        xâu <code>"do it yourself"</code> không có các từ đều bắt đầu là chữ hoa nên hàm này sẽ trả lại
+                        <code>False</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên, kết quả của chương trình trên.<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\ad.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">G. Hàm <span class="font-monospace">max</span>, <span
+                                class="font-monospace">min</span> trên chuỗi </p>
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">max(&lttên chuỗi&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách thực hoạt động của cú pháp trên: trả về kí tự lớn nhất trong
+                        <code>&lttên chuỗi&gt</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspTa lại có cú pháp sau:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">min(&lttên chuỗi&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách thực hoạt động của cú pháp trên: trả về kí tự nhỏ nhất trong
+                        <code>&lttên chuỗi&gt</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspVí dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\ae.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ đi phân tích đoạn mã trên:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>str1</code> rồi gán với xâu
+                        <code>"1234"</code>, khai báo biến <code>str2</code> rồi gán với xâu <code>"abcd"</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta in ra những hàm sau: <code>min(str1)</code>,
+                        <code>min(str2)</code>, <code>max(str1)</code>, <code>max(str2)</code> được ngăn cách bởi ký hiệu <code>"\n"</code>.<br> 
+                        &nbsp&nbsp&nbsp&nbspHàm <code>min(str1)</code> sẽ trả về kí tự nhỏ nhất trong biến xâu <code>str1</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspHàm <code>min(str2)</code> sẽ trả về kí tự nhỏ nhất trong biến xâu <code>str2</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspHàm <code>max(str1)</code> sẽ trả về kí tự lớn nhất trong biến xâu <code>str1</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspHàm <code>max(str2)</code> sẽ trả về kí tự lớn nhất trong biến xâu <code>str2</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\af.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">H. Hàm <span class="font-monospace">eval</span> cho toán học </p>
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">eval(&lttên biến chuỗi&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp thực hiện: trả về giá trị của biểu thức được viết dưới dạng chuỗi <code>&lttên biến chuỗi&gt</code>. Ví dụ:<br>
+                    </div>
+                    <!-- End of template -->
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\ag.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ đi phân tích đoạn mã trên:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta đi khai báo biến <code>str1</code> rồi gán xâu <code>"1+2+3+4+5"</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta lại tiếp tục đi khai báo biến <code>a</code> rồi gán số <code>10</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta thêm một lần nữa tiếp tục đi khai báo biến <code>b</code> rồi gán số <code>30</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 4: lần cuối cùng, ta đi khai báo biến <code>str2</code> rồi gán xâu <code>"1+2*(a+b)"</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 5: ta in ra hàm <code>eval(str1)</code> và hàm <code>eval(str2)</code> được phân cách bởi ký hiệu <code>"\n"</code>. <br>
+                        &nbsp&nbsp&nbsp&nbspHàm <code>eval(str1)</code> sẽ chuyển biến xâu <code>str1</code> trở thành biểu thức <code>1+2+3+4+5</code><br>
+                        &nbsp&nbsp&nbsp&nbspHàm <code>eval(str2)</code> sẽ chuyển biến xâu <code>str2</code> trở thành biểu thức <code>1+2*(a+b)</code><br>
+                        &nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên, kết quả ta nhận được:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="4.2\ah.jpg" class="card-img" alt="...">
+                        </div>
+                    </div><br><br>
+                    <div class="container">
+                        Nếu bạn đọc qua hết tất cả hàm mà chúng tôi đưa cho bạn thì xin chúc mừng bạn đã đi đến cuối bài học rồi. 
+                    </div>
+                    <br><br><br>
+                    <div class="d-grid gap-2 lesson-button">
+                        <a href="4.3.html" role="button" class="btn next-bg text-start"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div class="fs-5 text-success fw-bold" style="padding-bottom:0px; ">&gt Bài học tiếp
+                                theo
+                            </div>
+                            <span class="btn btn-success"
+                                style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events: none"
+                                disabled>4.3</span>
+                            <span class="fs-6 text-success"> Kiểu dữ liệu danh sách </span>
+                        </a>
+                        <a href="..\index.html" role="button" class="btn index text-start"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div class="fs-5 fw-bold" style="padding-bottom:0px; ">Quay trở về mục lục</div>
+                        </a>
+                        <a href="4.1.html" role="button" class="btn next-bg text-start"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div class="fs-5 text-primary fw-bold" style="padding-bottom:0px;">
+                                &lt Bài học trước </div>
+                            <span class="btn btn-primary"
+                                style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events:none"
+                                disabled>4.1</span>
+                            <span class="fs-6 text-primary"> Kiêu dữ liệu chuỗi xâu</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+</body>
+
+</html>
