@@ -34,10 +34,10 @@
                             Navigate
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="2.2.html">2.2 - Biến số </a>
+                            <li><a class="dropdown-item" href="4.2.html">4.2 - Một số thao tác với chuỗi xâu </a>
                             </li>
                             <li><a class="dropdown-item" href="..\index.html">Mục lục</a></li>
-                            <li><a class="dropdown-item" href="1.3.html">1.3 - Giới thiệu về môi trường Python Shell</a>
+                            <li><a class="dropdown-item" href="3.2.html">3.2 - Câu lệnh lặp</a>
                             </li>
                         </ul>
                     </li>
@@ -58,36 +58,255 @@
             <div class="card mt-xl-3 mb-xl-3 shadow rounded-4">
                 <div class="card-body">
                     <div class="container">
-                        <p class="fs-3">2.3 - Hàm <span class="font-monospace">input</span></p>
+                        <p class="fs-3">4.1 - Kiểu dữ liệu chuỗi xâu</p>
                     </div>
                     <br>
                     <div class="container">
-                        &nbsp&nbsp&nbsp&nbspỞ trong bài học này chúng ta sẽ nói về hàm <span class="font-monospace">input</span><br><br>
-                        <p class="fs-5 fw-bold">Biến số</p>
+                        &nbsp&nbsp&nbsp&nbspỞ trong bài học này chúng ta sẽ tìm hiểu về kiểu dữ liệu xâu<br><br>
+                        &nbsp&nbsp&nbsp&nbspỞ trong bài học <a href="2.1.html" class="pe-auto">2.1</a>, chúng ta có
+                        nói về cách sử dụng hàm <code>print</code> với xâu. Nhưng chúng ta có một câu hỏi,
+                        chuỗi xâu là gì<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <a name="A">
+                            <p class="fs-5 fw-bold">A. Định nghĩa của chuỗi xâu</p>
+                        </a>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspChuỗi xâu là một dãy các ký tự. Mọi ký tự trong chuỗi nằm trong một cặp
+                        ngoặc ("") kép hoặc một cặp ngoặc đơn (''). Chuỗi rỗng là chuỗi không có kí tự bên trong
+                        chuỗi.<br>
+                        &nbsp&nbsp&nbsp&nbspTa có ví dụ:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">"Day la mot chuoi"</span><br>
+                                    <span class="de">'day la mot chuoi'</span><br>
+                                    <span class="de">"Đây Cũng Là Một Chuỗi"</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCác kí tự trong chuỗi xâu đều thuộc bảng mã Unicode hoặc bảng mã ASCII.
+                        Chính vì
+                        vậy, chuỗi trong Python có hỗ trợ Tiếng Việt. Kí tự trong chuỗi được đánh chỉ số thứ từ
+                        0, 1, 2,...(từ trái sang phải) hoặc -1, -2, -3,...(từ phải sáng trái)<br>
+                        Ví dụ về chuỗi ở đây
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <a name="B">
+                            <p class="fs-5 fw-bold">B. Độ dài của chuỗi</p>
+                        </a>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspĐộ dài của chuỗi xâu là số lượng kí tự trong chuỗi (kí tự chữ, kí tự
+                        số, kí
+                        tự đặc biệt, kí tự trống)<br>
+                        &nbsp&nbsp&nbsp&nbspTa có hàm để lấy độ dài của chuỗi xâu,
+                        <code>len(<code>&ltchuỗi xâu&gt</code>)</code>
+                        Tất nhiên là hình ở đây
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Truy cập đến từng kí tự trong chuỗi xâu</p>
+                        &nbsp&nbsp&nbsp&nbspCú pháp để truy cập bất kì ký tự trong chuỗi xâu:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến&gt = &ltchuỗi xâu&gt[&ltchỉ số của ký tự&gt]</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspta gọi <code>&ltĐộ dài chuỗi xâu&gt</code> là n để cho ngắn gọn<br>
+                        &nbsp&nbsp&nbsp&nbsp<code>&ltChỉ số của kí tự&gt</code> được đánh số từ 0, 1, 2,...,n -
+                        1 (nghĩa là đọc từ trái sáng phải), hoặc -1, -2,..., -n (nghĩa là đọc từ phải sang
+                        trái)<br>
+                        Một hình ảnh ví dụ<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Ghép chuỗi xâu (tạo một chuỗi mới bằng cách ghép nhiều chuỗi
+                            xâu con)</p>
+                        &nbsp&nbsp&nbsp&nbspTa có thể ghép các chuỗi xâu con thành một chuỗi xâu mới.<br>
+                        &nbsp&nbsp&nbsp&nbspCú pháp cho ghép xâu:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&ltchuỗi mới&gt = &ltchuỗi con 1&gt + &ltchuỗi con 2&gt + &ltchuỗi con 3&gt +...</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        Hình ảnh nữa<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Lặp chuỗi xâu</p>
+                        &nbsp&nbsp&nbsp&nbspKhi ta muốn ghép nhiều lần một chuỗi giống nhau, bình thường ta sẽ
+                        phải sao chép và dán cũng một chuỗi xâu nhiều lần, nhưng ở trong ngôn ngữ Python,
+                        Python đã cho chúng ta hỗ trợ về cách lặp chuỗi xâu.<br>
+                        &nbsp&nbsp&nbsp&nbspCú pháp của lặp chuỗi xâu:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên chuỗi mới&gt = &lttên chuỗi bị lặp&gt*&ltsố lần lặp&gt</span><br>
+                                    <span class="com">#hoặc</span><br>
+                                    <span class="de">&lttên chuỗi mới&gt = &ltsố lần lặp&gt*&lttên chuỗi bị lặp&gt</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        Tiếp tục là hình ảnh<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">So sánh chuỗi xâu</p>
+                        &nbsp&nbsp&nbsp&nbsp<br>
+                        &nbsp&nbsp&nbsp&nbspSo sánh chuỗi xâu được thực hiện bằng cách lần lượt so sánh các kí tự từ
+                        trái
+                        sang phải. Nếu gặp một kí tự không bằng nhau thì chuỗi nào chứa kí tự lớn hơn sẽ là chuỗi lớn
+                        hơn. Ví dụ:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">"abc" &lt "abcd"</span><br>
+                                    <span class="com">#hay</span><br>
+                                    <span class="de">"acbb" &lt "abeeeeeeeeee"</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        Yep, image<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Lấy chuỗi con</p>
+                        &nbsp&nbsp&nbsp&nbspĐể lấy chuỗi con trong chuỗi lớn gồm các kí tự liên tiếp từ chỉ số
+                        <code>a</code> đến chỉ số <code>b</code>-1 (<code>a</code> &lt= <code>b</code>), ta có cú
+                        pháp sau:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên chuỗi con&gt = &lttên chuỗi&gt[a:b]</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        hình ảnh minh họa
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspLưu ý:<br>
+                        &nbsp&nbsp&nbsp&nbsp - Lấy từ kí tự đầu đến chỉ số <code>a</code> của chuỗi, <code>&lttên chuỗi lớn&gt[:a]</code>, nghĩa là cũng bằng câu lệnh <code>&lttên chuỗi lớn&gt[0:a]</code><br>
+                        &nbsp&nbsp&nbsp&nbsp - Lây các kí từ chỉ số <code>a</code> đến cuối chuỗi, <code>&lttên chuỗi lớn&gt[a:]</code><br>
+                        &nbsp&nbsp&nbsp&nbsp - Ta cũng có thể kết hợp cả hai công thức <code>&lttên chuỗi lớn&gt[:a]</code> và <code>&lttên chuỗi lớn&gt[a:]</code> thì sẽ ra chuỗi lớn ban đầu. Cú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên chuỗi&gt = &lttên chuỗi con&gt[:a] + &lttên chuỗi con&gt[a:]</span><br>
+                                    <span class="com">#Cả hai &lttên chuỗi&gt cùng tên với nhau</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        Hình ảnh minh họa<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <p class="fs-5 fw-bold">Đảo ngược thứ tự chuỗi</p>
+                        &nbsp&nbsp&nbsp&nbsp Để đảo ngược thứ tự của chuỗi, ta thực hiện cú pháp sau<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên chuỗi đảo ngược&gt = &lttên biến muốn đảo ngược&gt[::-1]</span><br>
+                                    <span class="com">#Cả hai &lttên chuỗi&gt cùng tên với nhau</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        Ảnh và ví dụ
                     </div>
                     <br><br><br>
                     <div class="d-grid gap-2 lesson-button">
-                        <a href="2.2.html" role="button" class="btn next-bg text-start"
+                        <a href="4.2.html" role="button" class="btn next-bg text-start"
                             style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
                             <div class="fs-5 text-success fw-bold" style="padding-bottom:0px; ">&gt Bài học tiếp theo
                             </div>
                             <span class="btn btn-success"
                                 style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events: none"
-                                disabled>2.2</span>
-                            <span class="fs-6 text-success"> Biến số </span>
+                                disabled>4.2</span>
+                            <span class="fs-6 text-success"> Một số thao tác với chuỗi xâu</span>
                         </a>
                         <a href="..\index.html" role="button" class="btn index text-start"
                             style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
                             <div class="fs-5 fw-bold" style="padding-bottom:0px; ">Quay trở về mục lục</div>
                         </a>
-                        <a href="1.3.html" role="button" class="btn next-bg text-start"
+                        <a href="3.2.html" role="button" class="btn next-bg text-start"
                             style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
                             <div class="fs-5 text-primary fw-bold" style="padding-bottom:0px;">
                                 &lt Bài học trước </div>
                             <span class="btn btn-primary"
                                 style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events:none"
-                                disabled>1.3</span>
-                            <span class="fs-6 text-primary"> Giới thiệu về môi trường Python Shell</span>
+                                disabled>3.2</span>
+                            <span class="fs-6 text-primary"> Câu lệnh lặp</span>
                         </a>
                     </div>
                 </div>
