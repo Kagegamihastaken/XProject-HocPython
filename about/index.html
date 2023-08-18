@@ -4,51 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kagegami's Website</title>
+    <title>HocPython</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="lesson_button.css" />
-    <link rel="stylesheet" href="code_color_format.css" />
-    <link rel="stylesheet" href="..\navbar.css" />
-    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">HocPython</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="..\index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="..\about.html">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Navigate
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="2.2.html">2.2 - Biến số </a>
-                            </li>
-                            <li><a class="dropdown-item" href="..\index.html">Mục lục</a></li>
-                            <li><a class="dropdown-item" href="1.3.html">1.3 - Giới thiệu về môi trường Python Shell</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="\lesson_button.css" />
+    <link rel="stylesheet" href="\navbar.css" />
+    <link rel="stylesheet" href="\padding.css" />
+    <link rel="stylesheet" href="\search_nav_color.css" />
+    <script src="\search.js"></script>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="\">HocPython</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="\about"><i class="bi bi-people-fill"></i> About</a>
+                        </li>
+                    </ul>
+                    <div role="search">
+                        <input class="form-control" type="search" placeholder="Search..." id="search-input">
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+        <span id="search-results" class="list-group align-right" style="overflow-y: scroll; max-height:250px;">
+            <!-- Search results will be displayed here -->
+        </span>
+    </div>
 </head>
 
 <body>
@@ -58,38 +51,47 @@
             <div class="card mt-xl-3 mb-xl-3 shadow rounded-4">
                 <div class="card-body">
                     <div class="container">
-                        <p class="fs-3">2.3 - Hàm <span class="font-monospace">input</span></p>
+                        <p class="fs-3">Về chúng tôi, và sản phẩm này.</p>
                     </div>
-                    <br>
+                    <br><br>
+                    <hr class="hr">
+                    </hr>
                     <div class="container">
-                        &nbsp&nbsp&nbsp&nbspỞ trong bài học này chúng ta sẽ nói về hàm <span class="font-monospace">input</span><br><br>
-                        <p class="fs-5 fw-bold">Biến số</p>
+                        <section id="A">
+                            <p class="fs-5 fw-bold">A. Về chúng tôi</p>
+                        </section>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspChúng tôi là học sinh lớp 9, học ở trường trung học cơ Sở Nhân Chính. Chúng
+                        tôi dự thi bảng làm web, sản
+                        phẩm này được làm bởi hai người:<br>
+                        &nbsp&nbsp&nbsp&nbsp * <span class="fw-bold">Đỗ Việt Huy</span>: người lập trình trang web này.<br>
+                        &nbsp&nbsp&nbsp&nbsp * <span class="fw-bold">Nguyễn Lưu Trí Dũng</span>: người phụ trách về hình ảnh và ý
+                        tưởng.<br>
+                        &nbsp&nbsp&nbsp&nbspNhóm của bon tôi tên là "XPround", bọn tôi mục đích ban đầu làm sản phẩm này
+                        để dự thi cuộc thi: <span class="fw-bold">MindX XProject</span>, <a
+                            href="https://www.facebook.com/groups/xproject2023/" class="pe-auto">trang chủ chính của
+                            cuộc thi</a>.<br>
+                    </div>
+                    <br><br>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <section id="B">
+                            <p class="fs-5 fw-bold">B. Về ý tưởng sản phẩm</p>
+                        </section>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspMục đích chúng tôi tạo trang web này để dạy ngôn ngữ lập trình Python miễn
+                        phí cho mọi người đến trang web này để học, dành cho những người muốn tìm hiểu sâu về Python.
+                        Sau cuộc thi <span>Xproject</span>, chúng tôi sẽ không bỏ dở trang web này mà tiếp tục cập nhật
+                        trang web này lên.<br>
+                        &nbsp&nbsp&nbsp&nbspNhưng vì sắp đến hạn nộp của cuộc thi cho nên nội dung của sản phẩm sẽ bị
+                        giới hạn, chúng tôi thật lòng xin lỗi vì chúng tôi không nhanh hơn so với dự kiến. Nhưng nếu các
+                        bạn có quan tâm đến sản phẩm này thì chúng tôi cũng có cảm ơn bạn vì bạn quan tâm.<br>
+                        &nbsp&nbsp&nbsp&nbspCác bạn hãy đón chờ những phần còn thiếu của chúng tôi!<br>
                     </div>
                     <br><br><br>
-                    <div class="d-grid gap-2 lesson-button">
-                        <a href="2.2.html" role="button" class="btn next-bg text-start"
-                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
-                            <div class="fs-5 text-success fw-bold" style="padding-bottom:0px; ">&gt Bài học tiếp theo
-                            </div>
-                            <span class="btn btn-success"
-                                style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events: none"
-                                disabled>2.2</span>
-                            <span class="fs-6 text-success"> Biến số </span>
-                        </a>
-                        <a href="..\index.html" role="button" class="btn index text-start"
-                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
-                            <div class="fs-5 fw-bold" style="padding-bottom:0px; ">Quay trở về mục lục</div>
-                        </a>
-                        <a href="1.3.html" role="button" class="btn next-bg text-start"
-                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
-                            <div class="fs-5 text-primary fw-bold" style="padding-bottom:0px;">
-                                &lt Bài học trước </div>
-                            <span class="btn btn-primary"
-                                style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events:none"
-                                disabled>1.3</span>
-                            <span class="fs-6 text-primary"> Giới thiệu về môi trường Python Shell</span>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
