@@ -1,0 +1,4 @@
+section {
+  padding-top: 75px; /* Adjust the value as per your requirement */
+  margin-top: -75px; /* Adjust the value to offset the target location */
+}

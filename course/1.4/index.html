@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HocPython</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lesson_button.css" />
+    <link rel="stylesheet" href="code_color_format.css" />
+    <link rel="stylesheet" href="..\navbar.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="\lesson_button.css" />
+    <link rel="stylesheet" href="\navbar.css" />
+    <link rel="stylesheet" href="\padding.css" />
+    <link rel="stylesheet" href="\search_nav_color.css" />
+    <script src="\search.js"></script>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="\">HocPython</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="\about"><i class="bi bi-people-fill"></i> About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Navigate
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="\course\2.1"><img src="/asset/icon/caret-right-fill.svg" alt="Left" width="16" height="16">2.1 - Xuất dữ liệu </a></li>
+                                <li><a class="dropdown-item" href="\">Mục lục</a></li>
+                                <li><a class="dropdown-item" href="\course\1.3"><img src="/asset/icon/caret-left-fill.svg" alt="Left" width="16" height="16">1.3 - Giới thiệu về môi trường Python Shell</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div role="search">
+                        <input class="form-control" type="search" placeholder="Search..." id="search-input">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <span id="search-results" class="list-group align-right" style="overflow-y: scroll; max-height:250px;">
+            <!-- Search results will be displayed here -->
+        </span>
+    </div>
+</head>
+
+<body>
+    <div class="bg-secondary-subtle">
+        <br>
+        <div class="container" style="max-width: 835px;">
+            <div class="card mt-xl-3 mb-xl-3 shadow rounded-4">
+                <div class="card-body">
+                    <div class="container">
+                        <p class="fs-3">1.4 - Chương trình đầu của bạn</p>
+                    </div>
+                    <br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspChúng ta đã học qua cách cài IDE, Python Shell, nhưng làm thế nào bây giờ chúng ta chạy được file Python?</p>
+                    </div>
+                    <hr class="hr">
+                    </hr><br>
+                    <div class="container">
+                        <section id="A">
+                            <p class="fs-5 fw-bold">A. Cách tạo file Python</p>
+                        </section>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspĐầu tiên, bạn vào "File Explorer"
+                    </div>
+                    <br><br><br>
+                    <div class="d-grid gap-2 lesson-button">
+                        <a href="\course\2.1" role="button" class="btn next-bg text-start d-flex icon-link"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div>
+                                <i class="bi bi-caret-right-fill" style="font-size: 30px; color: #198754;"></i>
+                            </div>
+                            <div>
+                                <div class="fs-5 text-success fw-bold" style="padding-bottom:0px; ">Bài học tiếp theo
+                                </div>
+                                <span class="btn btn-success"
+                                    style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events: none"
+                                    disabled>2.1</span>
+                                <span class="fs-6 text-success"> Xuất dữ liệu</span>
+                            </div>
+                        </a>
+                        <a href="\" role="button" class="btn index text-start"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div class="fs-5 fw-bold" style="padding-bottom:0px; ">Quay trở về mục lục</div>
+                        </a>
+                        <a href="\course\1.3\" role="button" class="btn next-bg text-start d-flex icon-link"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div>
+                                <i class="bi bi-caret-left-fill" style="font-size: 30px; color: #0D6EFD;"></i>
+                            </div>
+                            <div>
+                                <div class="fs-5 text-primary fw-bold" style="padding-bottom:0px; ">Bài học trước
+                                </div>
+                                <span class="btn btn-primary"
+                                    style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events:none"
+                                    disabled>1.3</span>
+                                <span class="fs-6 text-primary"> Giới thiệu Python và cách cài đặt Python</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+</body>
+
+</html>

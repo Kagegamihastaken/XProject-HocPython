@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HocPython</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="\lesson_button.css" />
+    <link rel="stylesheet" href="\code_color_format.css" />
+    <link rel="stylesheet" href="\navbar.css" />
+    <link rel="stylesheet" href="\padding.css" />
+    <link rel="stylesheet" href="\search_nav_color.css" />
+    <script src="\search.js"></script>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="\">HocPython</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="\about"><i class="bi bi-people-fill"></i> About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Navigate
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="\course\2.2"><img
+                                            src="/asset/icon/caret-right-fill.svg" alt="Left" width="16" height="16">2.2
+                                        - Biến số</a></li>
+                                <li><a class="dropdown-item" href="\">Mục lục</a></li>
+                                <li><a class="dropdown-item" href="\course\1.4"><img
+                                            src="/asset/icon/caret-left-fill.svg" alt="Left" width="16" height="16">1.4
+                                        - Chạy chương trình đầu của bạn</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div role="search">
+                        <input class="form-control" type="search" placeholder="Search..." id="search-input">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <span id="search-results" class="list-group align-right" style="overflow-y: scroll; max-height:250px;">
+            <!-- Search results will be displayed here -->
+        </span>
+    </div>
+</head>
+
+<body>
+    <div class="bg-secondary-subtle">
+        <br>
+        <div class="container" style="max-width: 835px;">
+            <div class="card mt-xl-3 mb-xl-3 shadow rounded-4">
+                <div class="card-body">
+                    <div class="container">
+                        <p class="fs-3">2.1 - Xuất dữ liệu</p>
+                    </div>
+                    <br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ trong bài học này chúng ta sẽ nói về xuất dữ liệu<br><br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <section id="A">
+                            <p class="fs-5 fw-bold">A. In một dòng ra console</p>
+                        </section>
+                        &nbsp&nbsp&nbsp&nbspHàm <code>print</code> được thiết kế dùng để in ra dữ liệu ra màn
+                        hình console trong khi đang chạy. Ví dụ, chúng ta muốn in ra từ "Hello World!" vào trong màn
+                        hình console thì chúng ta sẽ viết câu lệnh như này
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&gt&gt&gt</span>
+                                    <span class="b">print</span><span class="de">(</span><span class="g">"Hello World!"</span><span
+                                        class="de">)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspSau khi ta chạy câu lệnh trên thì kết quả ở trong console in ra
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">Hello World!</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa cũng có thể thay dấu ngoặc kếp thành dấu ngoặc đơn
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&gt&gt&gt</span>
+                                    <span class="b">print</span><span class="de">(</span><span class="g">'Hello World!'</span><span
+                                        class="de">)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspKết quả tương tự như câu lệnh trên.<br>
+                        &nbsp&nbsp&nbsp&nbspTrong hai câu lệnh ta vừa thực hiện, dấu ngoặc đơn và dấu ngoặc kép có tác
+                        dụng vai trò tương
+                        đương nhau ở trong Python. <br>
+                        &nbsp&nbsp&nbsp&nbspNhưng tuy nhiên chương trình chỉ đi chạy khi những cặp dấu ngoặc đó đi theo
+                        cặp. Một vi dụ như câu lệnh dưới:
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&gt&gt&gt</span>
+                                    <span class="b">print</span><span class="de">(</span><span class="g">'Hello World!"</span><span
+                                        class="de">)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspNếu bạn chạy câu lệnh trên kết quả chúng ta nhận được một cú pháp lỗi
+                        (SyntaxError).
+                    </div>
+                    <!-- Code template -->
+                    <div class="container testimonial-group scroll">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&nbsp&nbspFile "&ltstdin&gt", line 1</span><br>
+                                    <span class="de">&nbsp&nbsp&nbsp&nbspprint('Hello World!")</span><br>
+                                        <span class="de">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp^</span><br>
+                                    <span class="de">SyntaxError: unterminated string literal (detected at line 1)</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <hr class="hr">
+                    </hr><br>
+                    <div class="container">
+                        <section id="B">
+                            <p class="fs-5 fw-bold">B. In ra nhiều dòng trong console</p>
+                        </section>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspBây giờ ta muốn in ra nhiều dòng cùng một lúc như dòng xuất từ console dưới
+                        đây
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">Câu 1</span><br>
+                                    <span class="de">Câu 2</span><br>
+                                    <span class="de">Câu n</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspChúng ta có tận ba cách in ra được như xuất trên:<br>
+                        &nbsp&nbsp&nbsp&nbsp - Cách 1: Chúng ta có thể lặp lại câu lệnh <code>print</code> với Câu 1,
+                        Câu 2, Câu n.
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="b">print</span><span class="de">(</span><span class="g">"Câu 1"</span><span
+                                        class="de">)</span><br>
+                                    <span class="b">print</span><span class="de">(</span><span class="g">"Câu 2"</span><span
+                                        class="de">)</span><br>
+                                    <span class="b">print</span><span class="de">(</span><span class="g">"Câu n"</span><span
+                                        class="de">)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspĐoạn mã trên cho ta kết quả như ta mong đợi, nhưng mà ta phải dùng tận ba
+                        lần hàm <code>print</code> để thực hiện được y như ta mong đợi.<br>
+                        &nbsp&nbsp&nbsp&nbsp - Cách 2: Chúng ta có thể lặp lại ba lần cặp dấu ngoặc đơn.
+                        <!-- Code template -->
+                    </div>
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="b">print</span><span class="de">(</span><span class="g">'''Câu 1</span><br>
+                                    <span class="g">Câu 2</span><br>
+                                    <span class="g">Câu 3'''</span><span class="de">)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <!-- End of template -->
+                    &nbsp&nbsp&nbsp&nbspĐoạn mã trên vẫn cho ta kết quả như ta mong đợi, nhưng mà khác một điều so với
+                    đoạn mã trên là lần này chỉ dùng đúng một lần hàm <code>print</code>.<br>
+                    &nbsp&nbsp&nbsp&nbspQua hai đoạn mã trên, ta thấy cả hai cách đều dễ đọc nhưng một nhược điểm của
+                    hai đoạn mã trên là tốn
+                    tận ba dòng, nếu bạn không quan tâm đến số lượng dòng thì bạn bỏ qua cách 3.<br>
+                    &nbsp&nbsp&nbsp&nbsp - Cách 3: Chúng ta dùng ký tự <code>"\n"</code> trong hàm
+                    <code>print</code>.<br>
+                    &nbsp&nbsp&nbsp&nbspTrước khi đi vào đoạn mã tiếp theo, chúng tôi sẽ giải thích ký tự
+                    <code>"\n"</code> là gì. Ký tự <code>"\n"</code>là một ký tự đặc biệt, được dùng để xuống dòng trong
+                    đoạn xâu dài. Ví dụ đoạn mã dưới:
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="b">print</span><span class="de">(</span><span class="g">"Câu 1\nCâu 2\nCâu n"</span><span
+                                        class="de">)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspSo với hai đoạn mã trên thì đoạn mã này khó đọc hơn, nhưng khi chúng ta chạy
+                        đoạn mã trên, kết quả lại giống như chúng ta mong đợi, khác với hai đoạn mã trên thì đoạn mã này
+                        chỉ dùng có đúng một hàm <code>print</code> và một dòng.<br>
+                        &nbsp&nbsp&nbsp&nbspNgoài ra, ký tự <code>"\"</code> được dùng làm ký tự thoát như
+                        <code>"\n"</code>, <code>"\t"</code>, <code>"\r"</code> để biệu thị các
+                        ký tự đặc biệt trong xâu. Để in ra dấu "\" thì ta phải viết thêm dấu "\" để thành "\\". Ví dụ
+                        dưới đây
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&gt&gt&gt</span>
+                                    <span class="b">print</span><span class="de">(</span><span class="g">"\\"</span><span
+                                        class="de">)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspkết quả cho câu lệnh trên.
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">\</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <hr class="hr">
+                    </hr><br>
+                    <div class="container">
+                        <section id="C">
+                            <p class="fs-5 fw-bold">C. Câu lệnh <span class="font-monospace">sep</span> và <span
+                                    class="font-monospace">end</span> trong hàm <span
+                                    class="font-monospace">print</span>
+                            </p>
+                        </section>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspĐối số <span class="font-monospace">sep</span> là một từ khóa đối số
+                        (keyword argument) được đưa vào hàm <span class="font-monospace">print</span> để thêm một xâu
+                        vào giữa các phần thông tin in ra màn hình. Ví dụ:
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&gt&gt&gt</span>
+                                    <span class="b">print</span><span class="de">(</span><span class="g">"Hello"</span><span class="de">, </span>
+                                    <span class="g">"the"</span><span class="de">, </span>
+                                    <span class="g">"World!"</span><span class="de">, sep =</span>
+                                    <span class="g">"^"</span><span class="de">)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspKết quả cho câu lệnh trên:
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">Hello^the^World!</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspĐối số <span class="font-monospace">end</span> là một từ khóa đối số
+                        (keyword argument) được đưa vào hàm <span class="font-monospace">print</span>, chỉ in thêm sau
+                        khi in xong xâu cần in, (mặc định là <code>"\n"</code>) Ví dụ:
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="b">print</span><span class="de">(</span><span class="g">"Hello"</span><span class="de">, </span>
+                                    <span class="de">end =</span>
+                                    <span class="g">"^"</span><span class="de">)</span><br>
+                                    <span class="b">print</span><span class="de">(</span><span class="g">"World!"</span><span
+                                        class="de">)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspKết quả in ra:
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">Hello^World!</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <hr class="hr">
+                    </hr><br>
+                    <div class="container">
+                        <section id="D">
+                            <p class="fs-5 fw-bold">D. Mở rộng của hàm <span class="font-monospace">print</span></p>
+                        </section>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspChúng ta có thể gán cho biến rồi in ra màn hình. Ví dụ:
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&gt&gt&gt ten_bien = </span><span class="g">"Tôi học lập trình"</span><br>
+                                    <span class="de">&gt&gt&gt</span>
+                                    <span class="b">print</span><span class="de">(ten_bien)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspSau khi gán vào biến <code>ten_bien</code> rồi chạy hàm <code>print</code>
+                        với tham số là <code>ten_bien</code>. Thì ta sẽ có kết quả sau
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">Tôi học lập trình</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspNếu bạn muốn tìm hiểu sau về biến thì buổi học sau chúng ta sẽ học. Nếu ta
+                        muốn in ra nhiều dữ liệu thì ta có thể dùng dấu phẩy để ngăn cách các phần thông tin. Ví dụ:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&gt&gt&gt</span>
+                                    <span class="b">print</span><span class="de">(</span><span class="g">"Hello"</span><span class="de">, </span>
+                                    <span class="g">"the"</span><span class="de">, </span>
+                                    <span class="g">"World!"</span><span class="de"></span><span class="de">)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspSau khi ghi câu lệnh trên và chạy thì ta có kết quả như sau:
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">Hello the World!</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <!-- End of template -->
+                    <hr class="hr">
+                    </hr><br>
+                    <div class="container">
+                        <section id="E">
+                            <p class="fs-5 fw-bold">E. Cú pháp của hàm <span class="font-monospace">print</span></p>
+                        </section>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTrong đó:<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - <code>objects</code> là dữ liệu cần in ra, dấu <span
+                            class="fw-bold">*</span>
+                        thể hiện có thể nhiều hơn một dữ liệu được ngăn cách bằng dấu phẩy.<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - <code>sep</code> là xâu bị phân cách do sep.<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - <code>end</code> được in ra sau khi in xong <code>object</code>
+                        (giá trị mặc định là <code>"\n"</code>).<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - <code>file</code> sẽ được nói kĩ hơn ở chương sau.<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - <code>flush</code> nếu đúng (True) thì luồng bị buộc phải xóa
+                        (giá trị mặc định là <code>False</code>).
+                    </div>
+                    <br><br><br>
+                    <div class="d-grid gap-2 lesson-button">
+                        <a href="\course\2.2" role="button" class="btn next-bg text-start d-flex icon-link"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div>
+                                <i class="bi bi-caret-right-fill" style="font-size: 30px; color: #198754;"></i>
+                            </div>
+                            <div>
+                                <div class="fs-5 text-success fw-bold" style="padding-bottom:0px; ">Bài học tiếp theo
+                                </div>
+                                <span class="btn btn-success"
+                                    style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events: none"
+                                    disabled>2.2</span>
+                                <span class="fs-6 text-success"> Biến số </span>
+                            </div>
+                        </a>
+                        <a href="\" role="button" class="btn index text-start"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div class="fs-5 fw-bold" style="padding-bottom:0px; ">Quay trở về mục lục</div>
+                        </a>
+                        <a href="\course\1.4\" role="button" class="btn next-bg text-start d-flex icon-link"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div>
+                                <i class="bi bi-caret-left-fill" style="font-size: 30px; color: #0D6EFD;"></i>
+                            </div>
+                            <div>
+                                <div class="fs-5 text-primary fw-bold" style="padding-bottom:0px; ">Bài học trước
+                                </div>
+                                <span class="btn btn-primary"
+                                    style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events:none"
+                                    disabled>1.4</span>
+                                <span class="fs-6 text-primary"> Chạy chương trình đầu của bạn</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+</body>
+
+</html>
