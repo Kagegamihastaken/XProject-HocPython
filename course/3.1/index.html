@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HocPython</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="\lesson_button.css" />
+    <link rel="stylesheet" href="\code_color_format.css" />
+    <link rel="stylesheet" href="\navbar.css" />
+    <link rel="stylesheet" href="\padding.css" />
+    <link rel="stylesheet" href="\search_nav_color.css" />
+    <script src="\search.js"></script>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="\">HocPython</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="\about"><i class="bi bi-people-fill"></i> About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Navigate
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="\course\3.2"><img
+                                            src="/asset/icon/caret-right-fill.svg" alt="Left" width="16" height="16">3.2
+                                        - Câu lệnh lặp</a></li>
+                                <li><a class="dropdown-item" href="\">Mục lục</a></li>
+                                <li><a class="dropdown-item" href="\course\2.3"><img
+                                            src="/asset/icon/caret-left-fill.svg" alt="Left" width="16" height="16">2.3
+                                        - Nhập dữ liệu</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div role="search">
+                        <input class="form-control" type="search" placeholder="Search..." id="search-input">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <span id="search-results" class="list-group align-right" style="overflow-y: scroll; max-height:250px;">
+            <!-- Search results will be displayed here -->
+        </span>
+    </div>
+</head>
+
+<body>
+    <div class="bg-secondary-subtle">
+        <br>
+        <div class="container" style="max-width: 835px;">
+            <div class="card mt-xl-3 mb-xl-3 shadow rounded-4">
+                <div class="card-body">
+                    <div class="container">
+                        <p class="fs-3">3.1 - Câu lệnh rẽ nhánh</span></p>
+                    </div>
+                    <br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ trong bài học này chúng ta sẽ nói về câu lệnh rẽ nhánh<br><br>
+                        &nbsp&nbsp&nbsp&nbspỞ trong lập trình, chúng ta dùng câu lệnh rẽ nhánh để chạy một
+                        đoạn mã khối khi phải mãn một điều kiện gì đó.<br>
+                        &nbsp&nbsp&nbsp&nbspTa lấy ví dụ cho dễ hiểu, đánh giá điểm số (điểm giỏi, khá,
+                        trung bình) dựa theo điểm đạt được bởi một dọc sinh.<br>
+                        &nbsp&nbsp&nbsp&nbsp - Nếu ta đạt trên 9 thì đánh giá điểm giỏi<br>
+                        &nbsp&nbsp&nbsp&nbsp - Nếu ta đạt trên 6.5 thì đánh giá điểm khá<br>
+                        &nbsp&nbsp&nbsp&nbsp - Nếu ta đạt dưới 6.5 thì đánh giá điểm trung bình<br><br>
+                        &nbsp&nbsp&nbsp&nbsp Ở trong Python, ta có ba loại kiểu lệnh rẽ nhánh.<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <section id="A">
+                            <p class="fs-5 fw-bold">A. Câu lệnh rẽ nhánh if</p>
+                        </section>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspChúng ta có cấu trục câu lệnh rẽ nhánh:<br>
+                    </div>
+                    <div class="container" style="max-width: 500px;">
+                        <div class="card">
+                            <img src="\course\3.1\if-condition.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbsp Như ta thấy, nếu ta có điều kiện thỏa mãn, ta sẽ chạy câu lệnh,
+                        còn nếu điều kiện không thỏa mãn, ta bỏ qua câu lệnh rẽ nhánh.<br>
+                        &nbsp&nbsp&nbsp&nbsp Cú pháp của rẽ nhánh if<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">if &ltđiều kiên&gt:</span><br>
+                                    <span class="de">&nbsp&nbsp&nbsp&nbsp&ltkhối lệnh&gt</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbsp Cách cú pháp trên thực hiện: Nếu <code>&ltđiều kiện&gt</code> đúng thì
+                        sẽ thực hiện
+                        <code>&ltkhối lệnh&gt</code>. Chúng ta thấy cách hoạt động không khác gì trên cấu trục
+                        trên, ta có
+                        ví dụ:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">so = </span><span class="o">20</span><br>
+                                    <span class="b">if </span><span class="de">so > </span><span class="o">0</span><span class="de">:</span><br>
+                                    <span class="b">&nbsp&nbsp&nbsp&nbspprint</span><span class="de">(</span><span class="g">"Đây là số dương"</span><span class="de">)</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ phân tích trong đoạn mã trên:<br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 1, ta tạo biến <code>so</code> và gán cho biến <code>so</code>
+                        với <code>20</code><br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 2, ta sẽ kiểm tra điều kiện trên.<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">so > </span><span class="o">0</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbsp * Ta sẽ để ý rằng điều kiện của biến <code>so</code> thỏa mãn
+                        điều kiện trên cho nên đưa ra kết quả <code>True</code>.<br>
+                        &nbsp&nbsp&nbsp&nbsp - Nếu ta thỏa mãn điều kiện trên thì ta sẽ chạy hàm
+                        <code>print</code> và in ra <code>"Đây là số dương"</code><br>
+                        &nbsp&nbsp&nbsp&nbspSau khi chúng ta chạy đoạn mã trên, kết quả chúng ta nhận được:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">Đây là số dương</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <section id="B">
+                            <p class="fs-5 fw-bold">B. Câu lệnh rẽ nhánh if-else</p>
+                        </section>
+                        &nbsp&nbsp&nbsp&nbspTa lại có một cấu trúc của câu lệnh rẽ nhánh if-else:<br>
+                    </div>
+                    <div class="container" style="max-width: 500px;">
+                        <div class="card">
+                            <img src="\course\3.1\if-else-condition.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspNhư ta thấy, chúng ta kiểm tra điều kiện có thỏa mãn hay không, nếu
+                        thỏa mãn thì nó sẽ chạy câu lệnh 1, nhưng câu lệnh rẽ nhánh này khác hơn câu lệnh
+                        rẽ nhánh if, nếu điều kiện không thỏa mãn, thay vì bỏ qua nguyên câu lệnh rẽ nhánh
+                        thì nó sẽ chạy câu lệnh 2.<br>
+                        &nbsp&nbsp&nbsp&nbspCú pháp của câu lệnh rẽ nhánh if-else
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">if &ltđiều kiên&gt:</span><br>
+                                    <span class="de">&nbsp&nbsp&nbsp&nbsp&ltkhối lệnh 1&gt</span><br>
+                                    <span class="de">else:</span><br>
+                                    <span class="de">&nbsp&nbsp&nbsp&nbsp&ltkhối lệnh 2&gt</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp trên thực hiện: Nếu <code>&ltđiều kiện&gt</code> đúng thì
+                        thực hiện <code>&ltkhối lệnh 1&gt</code>; ngược lại (điều kiện sai) thực hiện
+                        <code>&ltkhối lệnh 2&gt</code>, ta có một ví dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 700px;">
+                        <div class="card">
+                            <img src="\course\3.1\if-else-example-metal-pipe.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ đi phân tích câu lệnh trên:<br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 1, ở đây ta đi tạo biến <code>a</code> rồi gán
+                        <code>100</code> vào biến <code>a</code><br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 2, ta đi khai báo biến <code>b</code> rồi gán <code>200</code>
+                        vào biến <code>b</code><br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 3, ta sẽ đi kiểm tra điều kiện trên.<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">a >= b</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbsp Trong điều kiện này, ta thấy biến <code>a</code> nhỏ hơn biến
+                        <code>b</code> (<code>100</code> &lt <code>200</code>), nên câu lệnh dòng 4 và dòng 5 bỏ
+                        qua và chúng ta chỉ chạy từ dòng 7 trở đi.<br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 7 và dòng 8:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">d = b - a</span><br>
+                                    <span class="b">print</span><span class="de">(d)</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ khởi tạo biến <code>d</code> và gán với một phép tính
+                        <code>b - a</code>. lúc này <code>d</code> = <code>100</code><br>
+                        &nbsp&nbsp&nbsp&nbspSau đó ta sẽ in ra biên <code>d</code><br>
+                        &nbsp&nbsp&nbsp&nbspKhi ta chạy đoạn mã trên, kết quả của chúng ta:<br>
+                    </div>
+                    <div class="container" style="max-width: 600px;">
+                        <div class="card">
+                            <img src="\course\3.1\someone-ask-why-image-is-so-offset-with-this.jpg" class="card-img"
+                                alt="...">
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <section id="C">
+                            <p class="fs-5 fw-bold">C. Câu lệnh rẽ nhánh if-elif</p>
+                        </section>
+                        &nbsp&nbsp&nbsp&nbspTa có một cấu trúc của câu lệnh rẽ nhánh if-elif:<br>
+                    </div>
+                    <div class="container" style="max-width: 600px;">
+                        <div class="card">
+                            <img src="\course\3.1\if-elif-condition-its-finishing-time.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ cấu trúc trên, nếu ta có điều kiên 1 thỏa mãn, ta sẽ chạy khối
+                        lệnh 1, còn nếu không thỏa mãn, ta tiếp tục kiểm tra điều kiện thứ 2, nếu điều
+                        kiện 2 thỏa mãn, ta sẽ chạy khối lệnh 2, nếu không thỏa mãn thì ta sẽ bỏ qua câu
+                        lệnh rẽ nhánh.<br>
+                        &nbsp&nbsp&nbsp&nbspCú pháp của câu lệnh rẽ nhánh if-elif
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">if &ltđiều kiên 1&gt:</span><br>
+                                    <span class="de">&nbsp&nbsp&nbsp&nbsp&ltkhối lệnh 1&gt</span><br>
+                                    <span class="de">elif  &ltđiều kiên 2&gt:</span><br>
+                                    <span class="de">&nbsp&nbsp&nbsp&nbsp&ltkhối lệnh 2&gt</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp trên thực hiện: nếu <code>&ltđiều kiện 1&gt</code> đúng sẽ thực
+                        hiện <code>&ltkhối
+                        lệnh 1&gt</code>, <span class="fw-bold">ngược lại</span>, nếu <code>&ltđiều kiện 2&gt</code>
+                        đúng thì thực hiện
+                        <code>&ltkhối lệnh 2&gt</code>, ta có ví dụ dưới đây:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">so = </span><span class="o">11</span><br>
+                                    <span class="b">if </span><span class="de">so % </span><span class="o">2</span><span class="de"> == </span><span class="o">0</span><span class="de">:</span><br>
+                                    <span class="b">&nbsp&nbsp&nbsp&nbspprint</span><span class="de">(</span><span class="g">"Đây là số chẵn"</span><span class="de">)</span><br>
+                                    <span class="b">elif </span><span class="de">so % </span><span class="o">2</span><span class="de"> == </span><span class="o">1</span><span class="de">:</span><br>
+                                    <span class="b">&nbsp&nbsp&nbsp&nbspprint</span><span class="de">(</span><span class="g">"Đây là số lẻ"</span><span class="de">)</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa sẽ đi phân tích phần mềm trên<br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 1: ta đi khai báo biến <code>số</code> và gán cho biến
+                        <code>số</code> với <code>11</code><br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 2: ta sẽ đi kiểm tra điều kiện:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">so % </span><span class="o">2</span><span class="de"> == </span><span class="o">0</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbsp Biến <code>số</code> chia cho 2 bị dư 1, mà điều kiện cần là dư 0
+                        cho nên điều kiện này không thỏa mãn và bỏ qua dòng 3<br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 4: ta tiếp tục đi kiểm tra điều kiện:<br>
+                    </div>
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">so % </span><span class="o">2</span><span class="de"> == </span><span class="o">1</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbsp Biến <code>số</code> chia cho 2 bị dư 1, điều kiện cần dư 1 nên điều
+                        kiện này thỏa mãn và tiếp tục chạy dòng thứ 5<br>
+                        &nbsp&nbsp&nbsp&nbsp - Dòng 5: ta dùng hàm <code>print</code> để in ra
+                        <code>"Đây là số lẻ"</code><br>
+                        &nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn code trên, ta nhận được kết quả.
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">Đây là số lẻ</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <section id="D">
+                            <p class="fs-5 fw-bold">D. Một số lưu ý khi dùng câu lệnh rẽ nhánh</p>
+                        </section>
+                        &nbsp&nbsp&nbsp&nbspCâu lệnh <code>if</code>, <code>else</code>, <code>elif</code> không viết
+                        hoa<br>
+                        &nbsp&nbsp&nbsp&nbspSau <code>&ltđiều kiện&gt</code> luôn cần có dấu hai chấm
+                        <code>:</code><br>
+                        &nbsp&nbsp&nbsp&nbspCác <code>&ltkhối lệnh&gt</code> luôn phải thụt lùi đầu dòng so với câu
+                        lệnh <code>if</code>, <code>else</code>, <code>elif</code>
+                        (Các khối lệnh phải thẳng hàng nhau). Ví dụ:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">a = </span><span class="o">19</span><br>
+                                    <span class="b">if </span><span class="de">a > </span><span class="o">0</span><span class="de">:</span><br>
+                                    <span class="b">print</span><span class="de">(</span><span class="g">"Đây là số dương"</span><span class="de">)</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspNếu bạn chạy câu lệnh trên thì sẽ có lỗi xảy ra
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&nbsp&nbspFile "test.py", line 3<br>
+                                    <span class="de">&nbsp&nbsp&nbsp&nbspprint("Đây là số dương"), line 3<br>
+                                    <span class="de">&nbsp&nbsp&nbsp&nbsp^<br>
+                                    <span class="de">IndentationError: expected an indented block after 'if' statement on line 2<br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <section id="E">
+                            <p class="fs-5 fw-bold">E. Các phép so sánh số học</p>
+                        </section>
+                    </div>
+                    <!-- Begin of board -->
+                    <div class="container text-center">
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0">Lớn hơn</div>
+                            <div class="col card card-body rounded-0">&gt</div>
+                        </div>
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0">Nhỏ hơn</div>
+                            <div class="col card card-body rounded-0">&lt</div>
+                        </div>
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0">Lớn hơn hoặc bằng</div>
+                            <div class="col card card-body rounded-0">&gt=</div>
+                        </div>
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0">Nhỏ hơn hoặc bằng</div>
+                            <div class="col card card-body rounded-0">&lt=</div>
+                        </div>
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0">Bằng</div>
+                            <div class="col card card-body rounded-0">==</div>
+                        </div>
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0">không bằng</div>
+                            <div class="col card card-body rounded-0">!=</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCác phép toán hỗ trợ logic:<br>
+                        &nbsp&nbsp&nbsp&nbsp * <code>and</code>: và<br>
+                        &nbsp&nbsp&nbsp&nbsp * <code>or</code>: hoặc<br>
+                        &nbsp&nbsp&nbsp&nbsp * <code>not</code>: không<br>
+                        &nbsp&nbsp&nbsp&nbspVí dụ một chương trình kiểm tra ba cạnh có phải là tam giác:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">a = <span class="b">int</span><span class="de">(</span><span class="b">input</span><span class="de">(</span><span class="g">"Nhập số a"</span><span class="de">))</span><br>
+                                    <span class="de">b = <span class="b">int</span><span class="de">(</span><span class="b">input</span><span class="de">(</span><span class="g">"Nhập số b"</span><span class="de">))</span><br>
+                                    <span class="de">c = <span class="b">int</span><span class="de">(</span><span class="b">input</span><span class="de">(</span><span class="g">"Nhập số c"</span><span class="de">))</span><br>
+                                    <span class="b">if </span><span class="de">a != </span><span class="o"> 0 </span><span class="b"> and </span><span class="de">b != </span><span class="o"> 0 </span><span class="b"> and </span><span class="de">c != </span><span class="o"> 0</span><span class="de">:</span><br>
+                                    <span class="b">&nbsp&nbsp&nbsp&nbspif </span><span class="de">(a + b > c) </span><span class="b"> and </span><span class="de">(b + c > a) </span><span class="b"> and </span><span class="de">(c + a > b)<span class="de">:</span><br>
+                                    <span class="b">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprint</span><span class="de">(</span><span class="g">"3 cạnh bạn vừa nhập là 3 cạnh của tam giác"</span><span class="de">)</span><br>
+                                    <span class="b">&nbsp&nbsp&nbsp&nbspelse</span><span class="de">:</span><br>
+                                    <span class="b">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprint</span><span class="de">(</span><span class="g">"3 cạnh bạn vừa nhập không phải là 3 cạnh của tam giác"</span><span class="de">)</span><br>
+                                    <span class="b">else</span><span class="de">:</span><br>
+                                    <span class="b">&nbsp&nbsp&nbsp&nbspprint</span><span class="de">(</span><span class="g">"1 trong 3 cạnh bạn vừa nhập không phải là số dương"</span><span class="de">)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of template --><br><br>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <section id="F">
+                            <p class="fs-5 fw-bold">F. Một số cách viết rút gọn</p>
+                        </section>
+                        &nbsp&nbsp&nbsp&nbspỞ trong Python, bạn có thể viết đầy đủ, nhưng viết tắt sẽ làm cho
+                        bạn viết mã sẽ nhanh hơn. Một số cách việt tắt<br>
+                    </div>
+                    <!-- Begin of board -->
+                    <div class="container text-center">
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0">Cách viết đầy đủ</div>
+                            <div class="col card card-body rounded-0">Cách viết rút gọn</div>
+                        </div>
+                        <div class="row row-cols-3 fs-6">
+                            <div class="col card card-body rounded-0">if &ltđiều kiện&gt == True</div>
+                            <div class="col card card-body rounded-0">if &ltđiều kiện&gt</div>
+                        </div>
+                        <div class="row row-cols-3 fs-6">
+                            <div class="col card card-body rounded-0">if &ltđiều kiện&gt == False</div>
+                            <div class="col card card-body rounded-0">if !&ltđiều kiện&gt</div>
+                        </div>
+                        <div class="row row-cols-3 fs-6">
+                            <div class="col card card-body rounded-0">if a == 0 and b == 0 and c == 0:</div>
+                            <div class="col card card-body rounded-0">if a == b == c == 0:</div>
+                        </div>
+                        <div class="row row-cols-3">
+                            <div class="col card card-body rounded-0">if 1&lta and a&ltb and b&lt5:</div>
+                            <div class="col card card-body rounded-0">If 1 &lt a &lt b &lt 5:</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbsp*<span class="fw-bold">Lưu ý</span>: các phép toán logic có thứ tự ưu tiên
+                        thấp hơn ( ưu tiên sau) các phép toán số học và
+                        phép toán so sánh . Vì vậy trong biểu thức điều kiện ta có thể viết: <br>
+                        &nbsp&nbsp&nbsp&nbspCâu lệnh gốc: if (a + b > c) and (b + c > a) and (c + a > b):<br>
+                        &nbsp&nbsp&nbsp&nbspCâu lệnh có thể viết: if a + b > c and b + c > a and c + a > b:<br><br>
+                        &nbsp&nbsp&nbsp&nbspCâu lệnh gốc: if (a%2==0) or (b%2==0):<br>
+                        &nbsp&nbsp&nbsp&nbspCâu lệnh có thể viết: if a%2 == 0 or b%2 == 0:<br>
+
+                    </div>
+                    <br><br><br>
+                    <div class="d-grid gap-2 lesson-button">
+                        <a href="\course\3.2" role="button" class="btn next-bg text-start d-flex icon-link"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div>
+                                <i class="bi bi-caret-right-fill" style="font-size: 30px; color: #198754;"></i>
+                            </div>
+                            <div>
+                                <div class="fs-5 text-success fw-bold" style="padding-bottom:0px; ">Bài học tiếp theo
+                                </div>
+                                <span class="btn btn-success"
+                                    style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events: none"
+                                    disabled>3.2</span>
+                                <span class="fs-6 text-success"> Câu lệnh lặp </span>
+                            </div>
+                        </a>
+                        <a href="\" role="button" class="btn index text-start"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div class="fs-5 fw-bold" style="padding-bottom:0px; ">Quay trở về mục lục</div>
+                        </a>
+                        <a href="\course\2.3\" role="button" class="btn next-bg text-start d-flex icon-link"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div>
+                                <i class="bi bi-caret-left-fill" style="font-size: 30px; color: #0D6EFD;"></i>
+                            </div>
+                            <div>
+                                <div class="fs-5 text-primary fw-bold" style="padding-bottom:0px; ">Bài học trước
+                                </div>
+                                <span class="btn btn-primary"
+                                    style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events:none"
+                                    disabled>2.3</span>
+                                <span class="fs-6 text-primary"> Nhập dữ liệu</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+</body>
+
+</html>
