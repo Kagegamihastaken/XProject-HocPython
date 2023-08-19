@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HocPython</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="\lesson_button.css" />
+    <link rel="stylesheet" href="\code_color_format.css" />
+    <link rel="stylesheet" href="\navbar.css" />
+    <link rel="stylesheet" href="\padding.css" />
+    <link rel="stylesheet" href="\search_nav_color.css" />
+    <script src="\search.js"></script>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="\">HocPython</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="\about"><i class="bi bi-people-fill"></i> About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Navigate
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="\course\5.2"><img
+                                            src="/asset/icon/caret-right-fill.svg" alt="Left" width="16" height="16">5.2
+                                        - Kiểu dữ liệu tệp</a></li>
+                                <li><a class="dropdown-item" href="\">Mục lục</a></li>
+                                <li><a class="dropdown-item" href="\course\4.3"><img
+                                            src="/asset/icon/caret-left-fill.svg" alt="Left" width="16" height="16">4.3 - Kiểu dữ liệu danh sách</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div role="search">
+                        <input class="form-control" type="search" placeholder="Search..." id="search-input">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <span id="search-results" class="list-group align-right" style="overflow-y: scroll; max-height:250px;">
+            <!-- Search results will be displayed here -->
+        </span>
+    </div>
+</head>
+
+<body>
+    <div class="bg-secondary-subtle">
+        <br>
+        <div class="container" style="max-width: 835px;">
+            <div class="card mt-xl-3 mb-xl-3 shadow rounded-4">
+                <div class="card-body">
+                    <div class="container">
+                        <p class="fs-3">5.1 - Chương trình con</p>
+                    </div>
+                    <br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ trong bài học này chúng ta sẽ nói về chương trình con<br><br>
+                        &nbsp&nbsp&nbsp&nbspỞ trong lập trình, nếu ta muốn sử dụng đi sử dụng lại một đoạn mã thì ta
+                        phải sao chép rồi dán vào. Nhưng cách đấy rất mất thời gian và làm cho đoạn mã trên dài ra và
+                        khó đọc.<br>
+                        &nbsp&nbsp&nbsp&nbspNếu trong đoạn mã của bạn có một đoạn mã được dùng nhiều thì chương trình
+                        con
+                        sẽ là lựa chọn thích hợp cho bạn.<br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <section id="A">
+                            <p class="fs-5 fw-bold">A. Cú pháp cơ bản của chương trình con</p>
+                        </section>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspchương trình con (subprogram) hay subroutine là một đoạn chương trình được
+                        đóng gói thành một đơn vị trình, nó thực hiện một số tác vụ cụ thể mà chương trình cần thực hiện
+                        nhiều lần từ nhiều nơi trong thời gian chạy của nó. Khi chương trình cần đến tác vụ cụ thể đó
+                        thì bố trí chỉ thị gọi (call) đến chương trình con này và nhận kết quả nếu có sau khi nó thực
+                        thi xong. Để khai báo một chương trình con, ta sẽ sử dụng cú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">def &lthàm&gt(&lttham số&gt):</span><br>
+                                    <span class="de">&nbsp&nbsp&nbsp&nbsp&ltkhối lệnh&gt</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!-- End of template -->
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa có một vi dụ như sau: <br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.1\a.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ trong ví dụ trên, ta tạo một chương trình con và đặt tên là
+                        <code>hinh_anh()</code>. Ở trong chương trình con, ta đi in ra hình ảnh mà ta làm được. Sau khi
+                        định dạng được chương trình con, ta sẽ dùng hàm của chương trình con mà ta đã thiêt lập để chạy
+                        chương trình con đấy.<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi ta chạy đọa mã trên, ta nhận được kết quả như sau:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.1\b.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <section id="B">
+                            <p class="fs-5 fw-bold">B. Câu lệnh <span class="font-monospace">return</span> trong chương
+                                trình con</p>
+                        </section>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCâu lệnh <code>return</code> được dùng khi <code>&lthàm&gt</code> không trả
+                        về gí trị nào. Ví dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.1\c.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa cùng phân tích đoạn mã trên:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1, 2: ta đi khai báo biến <code>a</code> và <code>b</code> rồi gán giá
+                        trị cho hai biến.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: lúc này chúng ta đi định nghĩa hàm <code>Tong()</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 4: ở trong trương trình con, ta khai báo biến <code>c</code> và gán
+                        phép toán, lúc này biến <code>c</code> là biến cục bộ (Local Variable), còn biến <code>a</code>
+                        và biến <code>b</code> được gọi là biến toàn cục cho nên phép toán gán vào biến <code>c</code>
+                        sẽ không tạo ra lỗi gì.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 5: Khi khai báo xong, ta dùng hàm<code>return</code> để trả về giá
+                        trị.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 6: Sau khi ta định nghĩa cho chương trình con trên, ta dùng hàm của
+                        chương trình con để chạy chương trình con trên.<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên, ta có kết quả:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.1\d.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <section id="C">
+                            <p class="fs-5 fw-bold">C. Dạng tham số mặc định </p>
+                        </section>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">def &lthàm&gt(&lttham số&gt = &ltgiá trị mặc định&gt):</span><br>
+                                    <span class="de">&nbsp&nbsp&nbsp&nbsp&ltkhối lệnh&gt</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCách cú pháp trên thực hiện: khi gọi hàm <code>&lthàm&gt()</code> thì
+                        <code>&lttham số&gt</code>
+                        được mặc định có giá trị là <code>&ltgiá trị mặc định&gt</code>. Nói cách khác: hàm
+                        <code>&lthàm&gt()</code> = <code>&lthàm&gt(&ltgiá trị mặc định&gt)</code>. Tuy nhiên, khi dùng
+                        <code>&lthàm&gt(&ltgiá trị&gt)</code> thì <code>&lttham số&gt</code> được thay đổi thành
+                        <code>&ltgiá trị&gt</code>. Ví dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.1\e.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa đi phân tích đoạn mã trên:<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta định nghĩa hàm <code>in_ra(n = 2)</code> với tham số
+                        <code>n</code> có giá trị mặc định là <code>2</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ở trong hàm, ta dùng vòng lặp <code>for</code> lặp với số lafn lặp
+                        là <code>n-1</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: bên trong câu lệnh lặp, ta in ra xâu <code>"python"</code> với số
+                        lần lặp.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 4: Sau khi định nghĩa hàm trên, ta dùng hàm <code>in_ra()</code>, ở
+                        trong câu lệnh này thì ta không có tham số nào nên dùng giá trị mặc định là <code>2</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 5: Ta in ra <code>"\n\n"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 6: Ta lại tiếp tục dùng hàm <code>in_ra(3)</code>, câu lẹnh này có cho
+                        tham số <code>3</code> vào nên không dùng tham số mặc định cỏa hàm đã dưa ra.<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên, ta nhận được kết quả:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.1\f.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <section id="D">
+                            <p class="fs-5 fw-bold">D. Biến toàn cục và biến cục bộ</p>
+                        </section>
+                    </div>
+                    <div class="container fw-bold">
+                        * Biến toàn cục
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspHàm <code>global</code> cho phép người dùng chỉnh sửa một biến nằm ngoài
+                        phạm vi hiện tại của nó. Nó được dùng để tạo các biến toàn cục trong Python từ phạm vi không
+                        phải biến toàn cục. <br>
+                        &nbsp&nbsp&nbsp&nbspNếu ta thay đổi giá trị của một biến toàn cục ở trong hàm, bạn sẽ nhận được
+                        một lỗi. Ví dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.1\er.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspNếu ta hạy chương trinh trên, ta nhận được kết quả như sau:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.1\ror.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspLỗi này xuất hiện là do Python xử lý <code>x</code> như một biến cục bộ và
+                        <code>x</code> không được khai báo trong hàm <code>ham()</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspMuốn làm cho đoạn mã trên chạy được, ta phải thêm một câu lệnh mới
+                        <code>global a</code>, ví dụ như sau:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.1\z.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspNếu ta chạy đoạn mã trên, thay vì nhận lỗi thì ta lại nhận đượ một kết
+                        quả:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.1\y.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container fw-bold">
+                        * Biến cục bộ
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspBiến cục bộ là biến được khai báo bên trong một hàm hoặc trong phạm vi cục
+                        bộ. Ta có ví dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.1\x.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspNếu ta chạy chương trình trên, ta nhận được một lỗi.<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.1\w.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspLỗi này xảy ra là do chúng ta đã cố truy cập vào biến cục bộ
+                        <code>xau</code> trong phạm vi toàn cục, nhưng <code>xau</code> chỉ làm việc trong hàm
+                        <code>ham()</code> hoặc phạm vi ục bộ<br>
+                        &nbsp&nbsp&nbsp&nbspTa sẽ sửa chương trinh trên bằng cách đẩy hàm <code>print(xau)</code> lên
+                        hàm <code>ham()</code>. Ví dụ:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.1\i.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspNếu ta chạy đoạn mã trên, thay vì ta nhận lỗi thì đoạn mã trên sẽ đưa ra kết quả:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.1\j.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="d-grid gap-2 lesson-button">
+                        <a href="\course\5.2" role="button" class="btn next-bg text-start d-flex icon-link"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div>
+                                <i class="bi bi-caret-right-fill" style="font-size: 30px; color: #198754;"></i>
+                            </div>
+                            <div>
+                                <div class="fs-5 text-success fw-bold" style="padding-bottom:0px; ">Bài học tiếp theo
+                                </div>
+                                <span class="btn btn-success"
+                                    style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events: none"
+                                    disabled>5.2</span>
+                                <span class="fs-6 text-success"> Kiểu dữ liệu tệp </span>
+                            </div>
+                        </a>
+                        <a href="\" role="button" class="btn index text-start"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div class="fs-5 fw-bold" style="padding-bottom:0px; ">Quay trở về mục lục</div>
+                        </a>
+                        <a href="\course\4.3\" role="button" class="btn next-bg text-start d-flex icon-link"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div>
+                                <i class="bi bi-caret-left-fill" style="font-size: 30px; color: #0D6EFD;"></i>
+                            </div>
+                            <div>
+                                <div class="fs-5 text-primary fw-bold" style="padding-bottom:0px; ">Bài học trước
+                                </div>
+                                <span class="btn btn-primary"
+                                    style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events:none"
+                                    disabled>4.3</span>
+                                <span class="fs-6 text-primary">Kiểu dữ liệu danh sách</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+</body>
+
+</html>

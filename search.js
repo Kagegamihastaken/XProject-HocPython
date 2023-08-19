@@ -68,6 +68,10 @@ $(document).ready(function () {
         { name: "Hàm min, max trên danh sách", link: "/course/4.3/#I", subname: "4.3 - Kiểu dữ liệu danh sách" },
         { name: "Thêm phần tử vào trong danh sách", link: "/course/4.3/#J", subname: "4.3 - Kiểu dữ liệu danh sách" },
         { name: "Hàm sum", link: "/course/4.3/#J", subname: "4.3 - Kiểu dữ liệu danh sách" },
+        { name: "Cú pháp cơ bản của chương trình con", link: "/course/5.1/#A", subname: "5.1 - Chương trình con" },
+        { name: "Câu lệnh return trong chương trình con", link: "/course/5.1/#B", subname: "5.1 - Chương trình con" },
+        { name: "Dạng tham số mặc định", link: "/course/5.1/#C", subname: "5.1 - Chương trình con" },
+        { name: "Biến toàn cục và biến cục bộ", link: "/course/5.1/#C", subname: "5.1 - Chương trình con" },
         // Add more items as needed
     ];
 

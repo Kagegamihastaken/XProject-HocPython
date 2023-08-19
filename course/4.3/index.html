@@ -264,7 +264,7 @@
                                     <span class="de">&ltdanh sách&gt = &ltdanh sách con 1&gt + &ltdanh sách con 2&gt + ...</span><br>
                                 </code>
                             </div>
-                        </div>\>
+                        </div>
                     </div><br><br>
                     <div class="container">
                         Chúng ta sẽ phân tích của đoạn mã trên:<br>
@@ -364,7 +364,7 @@
                             <div class="card-body"
                                 style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
                                 <code class="code">
-                                    <span class="de">&lttên biến danh sách 1&gt in &lttên biến danh sách 2&gt</span><br>
+                                    <span class="de">&ltphần tử&gt in &lttên biến danh sách&gt</span><br>
                                 </code>
                             </div>
                         </div>
@@ -372,31 +372,31 @@
                     <!-- End of template -->
                     <div class="container">
                         &nbsp&nbsp&nbsp&nbspPhép toán
-                        <code>&lttên biến danh sách 1&gt in &lttên biến danh sách 2&gt</code> trả về
-                        <code>True</code> nếu <code>&lttên biến danh sách 1&gt</code> là danh sách con của
-                        <code>&lttên biến danh sách 2&gt</code>. Ngược lại, phép toán trả về giá trị
+                        <code>&ltphần tử&gt in &lttên biến danh sách&gt</code> trả về
+                        <code>True</code> nếu <code>&ltphần tử&gt</code> có trong danh sách của
+                        <code>&lttên biến danh sách&gt</code>. Ngược lại, phép toán trả về giá trị
                         <code>False</code>. Ví dụ (cần sửa lại l.jpg và m.jpg):<br>
                     </div>
                     <div class="container" style="max-width: 795px;">
                         <div class="card">
-                            <img src="\course\4.3\l.jpg" class="card-img" alt="...">
+                            <img src="\course\4.3\edited-3.png" class="card-img" alt="...">
                         </div>
                     </div>
                     <div class="container">
                         &nbsp&nbsp&nbsp&nbspDòng 1: khai báo biến danh sách <code>List1</code> rồi gán danh sách
                         <code>[1, 3, 5, 7, 9, 2, 4, 6, 8]</code><br>
-                        &nbsp&nbsp&nbsp&nbspDòng 2: ta lại khai báo biến danh sách <code>List2</code> rồi gán danh sách
-                        <code>[1, 2, 3]</code><br>
-                        &nbsp&nbsp&nbsp&nbspDòng 3: ta sẽ kiểm tra nếu biến danh sách <code>List2</code> có phải là danh
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta lại khai báo biến <code>so</code> rồi gán số
+                        <code>3</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta sẽ kiểm tra nếu biến <code>so</code> có trong danh
                         sách con của <code>List1</code>. Nếu có, ta in ra
-                        <code>"List2 là danh sách con của List1"</code>.<br>
+                        <code>"biến so có trong danh sách của List1"</code>.<br>
                         &nbsp&nbsp&nbsp&nbspDòng 4: nếu điều kiện trên không thỏa mãn, ta in ra
-                        <code>"List2 không là danh sách con của List1"</code><br>
+                        <code>"biến so không có trong danh sách của List1"</code><br>
                         &nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên, ta nhận được kết quả:<br>
                     </div>
                     <div class="container" style="max-width: 795px;">
                         <div class="card">
-                            <img src="\course\4.3\m.jpg" class="card-img" alt="...">
+                            <img src="\course\4.3\edited-4.png" class="card-img" alt="...">
                         </div>
                     </div>
                     <hr class="hr">
@@ -547,28 +547,36 @@
                     <!-- End of template -->
                     <div class="container">
                         &nbsp&nbsp&nbsp&nbspCách cú pháp trên thực hiện: nối <code>&ltdanh sách 2&gt</code> vào
-                        cuối <code>&ltdanh sách 1&gt</code>. Ta có một ví dụ của cách dùng của hai hàm trên (lỗi về cơ
-                        bản, tại sao gán một biến void???):<br>
+                        cuối <code>&ltdanh sách 1&gt</code>. Ta có một ví dụ của cách dùng của hai hàm trên:<br>
                     </div>
 
                     <div class="container" style="max-width: 795px;">
                         <div class="card">
-                            <img src="\course\4.3\p.jpg" class="card-img" alt="...">
+                            <img src="\course\4.3\edited.png" class="card-img" alt="...">
                         </div>
                     </div>
 
                     <div class="container">
                         &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>List1</code> và gán với danh sách
                         <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code><br>
-                        &nbsp&nbsp&nbsp&nbspDòng 2: What<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta dùng hàm <code>List1.append(10)</code> để thêm phần tử
+                        <code>10</code> và cuối danh sách <code>List1</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 3: ta khai báo biến <code>List2</code> và gán với danh sách
+                        <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 4: ta dùng hàm <code>List2.extend([10, 11])</code> để nối dãy
+                        <code>[10, 11]</code> và cuối danh sách <code>List1</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspDòng 5: ta in ra biến danh sách <code>List1</code> và biến danh sách
+                        <code>List2</code>, được phân cách bởi ký tự:<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi ta chạy đoạn mã trên, kết quả của đoạn mã trên đưa ra là:<br>
                     </div>
                     <div class="container" style="max-width: 795px;">
                         <div class="card">
-                            <img src="\course\4.3\q.jpg" class="card-img" alt="...">
+                            <img src="\course\4.3\edited-2.png" class="card-img" alt="...">
                         </div>
                     </div>
                     <div class="container">
-                        <span class="fw-bold">Lưu ý: </span> hàm <code>append</code> và hàm <code>extend</code> có
+                        <span class="fw-bold">* Lưu ý: </span> hàm <code>append</code> và hàm <code>extend</code>
+                        có
                         khác nhau:
                         hàm <code>&ltdanh sách&gt.append(&ltđối tượng&gt)</code> thêm <code>&ltđối tượng&gt</code>
                         vào <code>&ltdanh sách&gt</code> như một phần tử. Hàm
@@ -623,9 +631,15 @@
                         <div class="card">
                             <img src="\course\4.3\s.jpg" class="card-img" alt="...">
                         </div>
-                    </div><br><br><br>
+                    </div><br>
+                    <div class="container fw-bold fst-italic">
+                        Nếu bạn đọc hết chương 4 thì chúc mừng bạn, bạn đã hoàn thành được những chủ đề của cơ
+                        bản của ngôn ngữ lập trình Python, đến chương tiếp theo, chúng ta sẽ cùng học về một số chủ đề
+                        nâng cao<br>
+                    </div>
+                    <br><br><br>
                     <div class="d-grid gap-2 lesson-button">
-                        <a href="\course\4.4" role="button" class="btn next-bg text-start d-flex icon-link"
+                        <a href="\course\5.1" role="button" class="btn next-bg text-start d-flex icon-link"
                             style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
                             <div>
                                 <i class="bi bi-caret-right-fill" style="font-size: 30px; color: #198754;"></i>
@@ -635,8 +649,8 @@
                                 </div>
                                 <span class="btn btn-success"
                                     style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events: none"
-                                    disabled>4.4</span>
-                                <span class="fs-6 text-success"> ??? </span>
+                                    disabled>5.1</span>
+                                <span class="fs-6 text-success"> Chương trình con </span>
                             </div>
                         </a>
                         <a href="\" role="button" class="btn index text-start"
