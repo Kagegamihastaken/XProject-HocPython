@@ -71,7 +71,9 @@ $(document).ready(function () {
         { name: "Cú pháp cơ bản của chương trình con", link: "/course/5.1/#A", subname: "5.1 - Chương trình con" },
         { name: "Câu lệnh return trong chương trình con", link: "/course/5.1/#B", subname: "5.1 - Chương trình con" },
         { name: "Dạng tham số mặc định", link: "/course/5.1/#C", subname: "5.1 - Chương trình con" },
-        { name: "Biến toàn cục và biến cục bộ", link: "/course/5.1/#C", subname: "5.1 - Chương trình con" },
+        { name: "Biến toàn cục và biến cục bộ", link: "/course/5.1/#D", subname: "5.1 - Chương trình con" },
+        { name: "Định nghĩa của tệp", link: "/course/5.2/#A", subname: "5.2 - Kiểu dữ liệu tệp" },
+        { name: "Các thao tác với tệp", link: "/course/5.2/#B", subname: "5.2 - Kiểu dữ liệu tệp" },
         // Add more items as needed
     ];
 

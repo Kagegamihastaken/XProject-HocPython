@@ -1,0 +1,3 @@
+Tự học lập trình Python.
+Cấu trục Python dễ hiểu.
+Python là một ngôn ngữ sử dụng thông dịch để chạy.

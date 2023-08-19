@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HocPython</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="\lesson_button.css" />
+    <link rel="stylesheet" href="\code_color_format.css" />
+    <link rel="stylesheet" href="\navbar.css" />
+    <link rel="stylesheet" href="\padding.css" />
+    <link rel="stylesheet" href="\search_nav_color.css" />
+    <script src="\search.js"></script>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="\">HocPython</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="\about"><i class="bi bi-people-fill"></i> About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Navigate
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item disabled" aria-disabled="true">Không có bài học sau</a></li>
+                                <li><a class="dropdown-item" href="\">Mục lục</a></li>
+                                <li><a class="dropdown-item" href="\course\5.1"><img
+                                            src="/asset/icon/caret-left-fill.svg" alt="Left" width="16" height="16">5.1 - Chương trình con</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div role="search">
+                        <input class="form-control" type="search" placeholder="Search..." id="search-input">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <span id="search-results" class="list-group align-right" style="overflow-y: scroll; max-height:250px;">
+            <!-- Search results will be displayed here -->
+        </span>
+    </div>
+</head>
+
+<body>
+    <div class="bg-secondary-subtle">
+        <br>
+        <div class="container" style="max-width: 835px;">
+            <div class="card mt-xl-3 mb-xl-3 shadow rounded-4">
+                <div class="card-body">
+                    <div class="container">
+                        <p class="fs-3">5.2 - Kiểu dữ liệu tệp</p>
+                    </div>
+                    <br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ trong bài học này chúng ta sẽ nói về Kiểu dữ liệu tệp<br><br>
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <section id="A">
+                            <p class="fs-5 fw-bold">A. Định nghĩa của tệp</p>
+                        </section>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTệp (file) hay còn gọi là tập tin dùng để chứa các thông tin được đặt tên và
+                        lưu trữ trên bộ nhớ
+                        máy tính như USB, thẻ nhớ, CD, DVD,… Ký tự lưu trong tệp không chỉ theo mã ASCII mà còn có thể
+                        mà mã Unicode. Khi muốn đọc/ ghi dữ liệu vào tệp ta phải mở tệp trước và sau khi thao tác xong
+                        với tệp ta phải đóng tệp để giải phóng bộ nhớ.
+                    </div>
+                    <hr class="hr">
+                    </hr>
+                    <div class="container">
+                        <section id="B">
+                            <p class="fs-5 fw-bold">B. Các thao tác với tệp</p>
+                        </section>
+                    </div>
+                    <div class="container fw-bold">
+                        &nbsp&nbsp&nbsp&nbsp * Mở tệp:
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp:<br>
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến tệp&gt = open(&lttên tệp&gt, &ltkiểu mở&gt)</span><br>
+                                    <span class="com">#Ta cũng có kiểu mở khác như:</span><br>
+                                    <span class="de">with open(&lttên tệp&gt, &ltkiểu mở&gt) as &lttên biến&gt</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspLưu ý:<br>
+                        &nbsp&nbsp&nbsp&nbsp + <code>&lttên tệp&gt</code> là địa chỉ của tệp cần mở trong bộ nhớ máy
+                        tính với các dấu <code>"/"</code> được đổi thành "\", ở trong buổi học <a href="/course/2.1"
+                            class="pe-auto">2.1</a>, chúng ta đã học cách thoát ký tự <code>"\"</code><br>
+                        &nbsp&nbsp&nbsp&nbspMột số kiểu loại mở mà Python hỗ trợ
+                    </div>
+                    <!-- Begin of board -->
+                    <div class="container text-center">
+                        <div class="row row-cols-2">
+                            <div class="col-1 card card-body rounded-0  fs-4 fw-bold">Kiểu mở</div>
+                            <div class="col card card-body rounded-0  fs-4 fw-bold">Mô tả</div>
+                        </div>
+                        <div class="row row-cols-2">
+                            <div class="col-1 card card-body rounded-0">r</div>
+                            <div class="col card card-body rounded-0">Mở file chỉ để đọc</div>
+                        </div>
+                        <div class="row row-cols-2">
+                            <div class="col-1 card card-body rounded-0">r+</div>
+                            <div class="col card card-body rounded-0">Mở file để đọc và ghi</div>
+                        </div>
+                        <div class="row row-cols-2">
+                            <div class="col-1 card card-body rounded-0">w</div>
+                            <div class="col card card-body rounded-0">Tạo một file mới để ghi, nếu file đã tồn tại thì
+                                sẽ bị ghi mới</div>
+                        </div>
+                        <div class="row row-cols-2">
+                            <div class="col-1 card card-body rounded-0">w+</div>
+                            <div class="col card card-body rounded-0">Tạo một file mới để đọc và ghi, nếu file đã tồn
+                                tại thì sẽ bị ghi mới</div>
+                        </div>
+                        <div class="row row-cols-2">
+                            <div class="col-1 card card-body rounded-0">a</div>
+                            <div class="col card card-body rounded-0">Mở file để ghi thêm vào cuối file, nếu không tìm
+                                thấy file sẽ tạo mới một file để ghi mới</div>
+                        </div>
+                        <div class="row row-cols-2">
+                            <div class="col-1 card card-body rounded-0">a+</div>
+                            <div class="col card card-body rounded-0">Mở file để đọc và ghi thêm vào cuối file, nếu
+                                không tìm thấy file sẽ tạo mới một file để đọc và ghi mới</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa có ví dụ cho cú pháp trên.<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.2\a.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ câu lệnh trên, ta khai báo biến <code>bien_doc</code> với hàm
+                        <code>open</code>, hàm open trong câu lệnh trên sẽ mở địa chỉ của tệp <code>"tep.txt"</code> và
+                        kiểu mở <code>"r"</code> chỉ để đọc tệp. Và dòng <code>encoding="utf-8"</code> chúng ta dùng kiể
+                        mã hóa là <code>"utf-8"</code> để chúng ta đọc được chữ Tiếng Việt.<br>
+                    </div>
+                    <div class="container fw-bold">
+                        &nbsp&nbsp&nbsp&nbsp * Đọc tệp:
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp để đọc từng dòng:
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến tệp&gt.readline()</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa có ví dụ như sau:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.2\b.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspỞ đây tôi có tệp được ghi như hình trên. Sau đó viết một đoạn mã để đọc
+                        tệp.<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.2\c.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>bien_doc</code> và gán hàm
+                        <code>open("tep.txt", "r", encoding="utf-8")</code> để đọc tệp <code>tep.txt</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta in ra hàm <code>bien_doc.readline()</code>, hàm này để đọc từng
+                        dòng trong tệp <code>"tep.txt"</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi chạy đoạn mã trên, ta có kết quả.<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.2\d.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp để đọc hết tệp:
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến tệp&gt.read()</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa có ví dụ như sau:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.2\e.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta khai báo biến <code>bien_doc</code> và gán hàm
+                        <code>open("tep.txt", "r", encoding="utf-8")</code> để đọc tệp <code>tep.txt</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta in ra hàm <code>bien_doc.read()</code>, hàm này để đọc hết trong
+                        tệp <code>"tep.txt"</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi chạy đoạn mã trên, ta có kết quả.<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.2\f.png" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container fw-bold fst-italic">
+                        Nếu bạn đọc hết chương 4 thì chúc mừng bạn, bạn đã hoàn thành được những chủ đề của cơ
+                        bản của ngôn ngữ lập trình Python, đến chương tiếp theo, chúng ta sẽ cùng học về một số chủ đề
+                        nâng cao<br>
+                    </div>
+                    <div class="container fw-bold">
+                        &nbsp&nbsp&nbsp&nbsp * Viết tệp:
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspCú pháp để đọc từng dòng:
+                    </div>
+                    <!-- Code template -->
+                    <div class="container">
+                        <div class="card mt-xl-1 mb-xl-1 shadow-sm rounded-1 code-dark-mode">
+                            <div class="card-body"
+                                style="padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;">
+                                <code class="code">
+                                    <span class="de">&lttên biến tệp&gt.write(&ltnội dung cần ghi&gt)</span><br>
+                                </code>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspTa có ví dụ như sau:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.2\a.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container">
+                        &nbsp&nbsp&nbsp&nbspDòng 1: ta đi khai báo biến <code>f</code> với hàm
+                        <code>open("C:/Users/Asus TUF/Desktop/ví dụ.txt", "w+", encoding="utf-8")</code>, hàm này đọc và
+                        ghi tệp <code>"C:/Users/Asus TUF/Desktop/ví dụ.txt"</code><br>
+                        &nbsp&nbsp&nbsp&nbspDòng 2: ta dùng hàm <code>f.write("tự học python")</code> để ghi
+                        <code>"tự học python"</code> vào tệp <code>"C:/Users/Asus TUF/Desktop/ví dụ.txt"</code>.<br>
+                        &nbsp&nbsp&nbsp&nbspSau khi chạy đoạn mã trên, chương trình sẽ tự đóng và ghi vào tệp
+                        <code>"C:/Users/Asus TUF/Desktop/ví dụ.txt"</code>, mở tệp đấy và ta nhận được kết quả:<br>
+                    </div>
+                    <div class="container" style="max-width: 795px;">
+                        <div class="card">
+                            <img src="\course\5.2\b.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="container fw-bold fst-italic">
+                        Vậy là chúng ta đã hết bài học mất rồi, các bạn hãy đón chờ những phần còn thiếu nhé!<br>
+                    </div>
+                    <br><br><br>
+                    <div class="d-grid gap-2 lesson-button">
+                        <button role="button" class="btn next-bg text-start d-flex icon-link"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px" disabled>
+                            <div>
+                                <div class="fs-5 text-success fw-bold" style="padding-bottom:0px; ">Không có bài học nào sau
+                                </div>
+                            </div>
+                        </button>
+                        <a href="\" role="button" class="btn index text-start"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div class="fs-5 fw-bold" style="padding-bottom:0px; ">Quay trở về mục lục</div>
+                        </a>
+                        <a href="\course\5.1\" role="button" class="btn next-bg text-start d-flex icon-link"
+                            style="padding-top:3px; padding-left:3px; padding-bottom:3px; padding-right:3px">
+                            <div>
+                                <i class="bi bi-caret-left-fill" style="font-size: 30px; color: #0D6EFD;"></i>
+                            </div>
+                            <div>
+                                <div class="fs-5 text-primary fw-bold" style="padding-bottom:0px; ">Bài học trước
+                                </div>
+                                <span class="btn btn-primary"
+                                    style="padding-top:0px; padding-left:5px; padding-bottom:0px; padding-right:5px; pointer-events:none"
+                                    disabled>5.1</span>
+                                <span class="fs-6 text-primary"> Chương trình con </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+</body>
+
+</html>
